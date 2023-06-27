@@ -1,4 +1,4 @@
-#Wild Sliding Puzzles
+# Wild Sliding Puzzles
 Developer: Georgina Carlisle
 
 Responsive image
@@ -7,7 +7,7 @@ Project Description
 
 Link to live page - This project is currently under construction
 
-##Contents
+## Contents
 [Features](#features)
 
 [Design](#design)
@@ -31,64 +31,64 @@ Link to live page - This project is currently under construction
 
 [Acknowledgements](#acknowledgements)
 
-##Features
+## Features
 
-###Existing Features
-
-[Return to contents list](#contents)
-
-###Future Features
+### Existing Features
 
 [Return to contents list](#contents)
 
-##Design
-
-###The Strategy Plane
+### Future Features
 
 [Return to contents list](#contents)
 
-###The Scope Plane
+## Design
+
+### The Strategy Plane
 
 [Return to contents list](#contents)
 
-###The Structure Plane
+### The Scope Plane
 
 [Return to contents list](#contents)
 
-###The Skeleton Plane
+### The Structure Plane
 
 [Return to contents list](#contents)
 
-###The Surface Plane
+### The Skeleton Plane
 
 [Return to contents list](#contents)
 
-##Testing and Validation
+### The Surface Plane
+
+[Return to contents list](#contents)
+
+## Testing and Validation
 
 Link to testing.md
 
 [Return to contents list](#contents)
 
-##Bugs and fixes
+## Bugs and fixes
 
 [Return to contents list](#contents)
 
-##Deployment
+## Deployment
 
 [Return to contents list](#contents)
 
-##Languages
+## Languages
 
 [Return to contents list](#contents)
 
-##Tools and Technologies
+## Tools and Technologies
 
 [Return to contents list](#contents)
 
-##Credits
+## Credits
 
 [Return to contents list](#contents)
 
-##Acknowledgements
+## Acknowledgements
 
 [Return to contents list](#contents)
