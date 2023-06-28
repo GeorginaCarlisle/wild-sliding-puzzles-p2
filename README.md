@@ -149,6 +149,35 @@ Win Page (2nd Sprint)
 
 ### The Skeleton Plane
 
+The following wire frames show the intended design of each of the three pages when viewed on a smart phone and on a desktop computer.
+
+#### Landing Page
+
+![Wire frame showing the landing page on a smart phone](documentation/wireframes/landing-page-mobile.png)
+
+![Wire frame showing the landing page on a desktop computer](documentation/wireframes/landing-page-browser.png)
+
+#### Puzzle Page
+
+![Wire frame showing the puzzle page on a smart phone](documentation/wireframes/puzzle-page-mobile.png)
+
+![Wire frame showing the Puzzle page on a desktop computer](documentation/wireframes/puzzle-page-browser.png)
+
+#### Win Page (2nd Sprint)
+
+![Wire frame showing the win page on a smart phone](documentation/wireframes/win-page-mobile.png)
+
+![Wire frame showing the win page on a desktop computer](documentation/wireframes/win-page-browser.png)
+
+#### Pop-ups
+
+The following wireframes show the instructions pop-up when activated from the puzzle page. The Tips and Sneeky Peek pop-ups will be very similar.
+
+![Wire frame showing the instructions popup on a smart phone](documentation/wireframes/instructions-popup-mobile.png)
+
+![Wire frame showing the instructions popup on a smart phone](documentation/wireframes/instructions-popup-browser.png)
+
+
 [Return to contents list](#contents)
 
 ### The Surface Plane
