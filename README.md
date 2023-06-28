@@ -113,6 +113,38 @@ The scope for this project explores the requirements of both user and owner, and
 
 ### The Structure Plane
 
+Wild Sliding Puzzles will consist of two pages initially – A landing page and a puzzle page. A win page will be added as part of the 2nd sprint. 
+
+The following pop-ups will also be created to house extra information, which can then be viewed without disrupting the puzzle: Instructions, Tips and Sneeky Peek (image of completed puzzle).
+
+Navigation will be provided through clearly visible buttons and a footer will be placed at the bottom of all pages.
+
+#### Site architecture
+
+Landing Page
+-	Wild Sliding Puzzles title
+-	Short intro about UK wildlife
+-	Introduction to the puzzle
+-	Static Image of a jumbled sliding puzzle
+-	Button to take user to the puzzle page
+-	Button to bring up instructions pop-up
+-	Footer with developer details and link to the ‘Wild Isles’ project
+
+Puzzle Page
+-	Wild Sliding Puzzles title
+-	Sliding puzzle game 
+-	Button to change the puzzle (2nd Sprint)
+-	Button to bring up tips pop-up
+-	Button to bring up sneeky peek pop-up
+-	Button to bring up instructions pop-up
+-	Footer with developer details and link to the ‘Wild Isles’ project
+
+Win Page (2nd Sprint)
+-	Wild Sliding Puzzles title
+-	Information linked to the subject of the puzzle that has been solved
+-	Button to play again
+-	Button to take user to the ‘Wild Isles’ website, external link
+
 [Return to contents list](#contents)
 
 ### The Skeleton Plane
