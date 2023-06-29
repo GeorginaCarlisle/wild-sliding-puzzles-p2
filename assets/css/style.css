@@ -2,3 +2,21 @@
 body {
   margin: 0;
 }
+
+/* Styling specefic to the puzzle */
+
+#puzzle-grid-container {
+  /* Size of the container will change relative to the size of the window while maintaining its aspect ratio */
+  width: 80%;
+  aspect-ratio: 1/1;
+  /* Centre align grid and maintain even white space around it */
+  margin: 10%;
+  /* CSS grid styling */
+  display: grid;
+  grid-template-columns: [left] 1fr [middle] 1fr [right] 1fr; /* Value of 1fr causes the space to be evenly distributed */
+  grid-template-rows: [top] 1fr [center] 1fr [bottom] 1fr;
+}
+
+.grid-box {
+  border: 1px solid black;
+}
