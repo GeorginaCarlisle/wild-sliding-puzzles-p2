@@ -19,4 +19,5 @@ body {
 
 .grid-box {
   border: 1px solid black;
+  background-size: cover;
 }
