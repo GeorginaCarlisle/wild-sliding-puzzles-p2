@@ -212,4 +212,14 @@ Link to testing.md
 
 ## Acknowledgements
 
+### Websites, articles and tutorials
+
+[A Complete Guide to CSS Grid - CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/) - My knowledge and understanding of CSS grid and how to use it was picked up from this article.
+
+[How to Aspect Ratio - W3 Schools](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) - I used this article to find a way to set the height of my grid boxes relative to the width so that the box had an aspect ratio of 1:1.
+
+
+
+
+
 [Return to contents list](#contents)
