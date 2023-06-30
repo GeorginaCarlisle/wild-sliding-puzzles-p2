@@ -57,7 +57,6 @@ function scrambleGamePicture() {
   }
 }
 
-
 /**
  * Called when a tile is clicked and passed the details of the tile clicked. Event listener set in setGamePicture
  * Grid position of tile clicked analysed and corrosponding function (example gridOneClicked) called
@@ -89,43 +88,201 @@ function clickedTile(tile) {
   } 
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 1 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridOneClicked(tile) {
-  console.log(tile + "in grid one");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "1 / 2 / 2 / 3") {
+    tileSlideRight(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 1 / 3 / 2") {
+    tileSlideDown(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 2 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridTwoClicked(tile) {
-  console.log(tile + "in grid two");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "1 / 3 / 2 / 4") {
+    tileSlideRight(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 2 / 3 / 3") {
+    tileSlideDown(tile);
+  }
+  else if (emptySpace.style.gridArea === "1 / 1 / 2 / 2") {
+    tileSlideLeft(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 3 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridThreeClicked(tile) {
-  console.log(tile + "in grid three");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "1 / 2 / 2 / 3") {
+    tileSlideLeft(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 3 / 3 / 4") {
+    tileSlideDown(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 4 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridFourClicked(tile) {
-  console.log(tile + "in grid four");
+   let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "2 / 2 / 3 / 3") {
+    tileSlideRight(tile);
+  }
+  else if (emptySpace.style.gridArea === "3 / 1 / 4 / 2") {
+    tileSlideDown(tile);
+  }
+  else if (emptySpace.style.gridArea === "1 / 1 / 2 / 2") {
+    tileSlideUp(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 5 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridFiveClicked(tile) {
-  console.log(tile + "in grid five");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "2 / 3 / 3 / 4") {
+    tileSlideRight(tile);
+  }
+  else if (emptySpace.style.gridArea === "3 / 2 / 4 / 3") {
+    tileSlideDown(tile);
+  }
+  else if (emptySpace.style.gridArea === "1 / 2 / 2 / 3") {
+    tileSlideUp(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 1 / 3 / 2") {
+    tileSlideLeft(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 6 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridSixClicked(tile) {
-  console.log(tile + "in grid six");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "3 / 3 / 4 / 4") {
+    tileSlideDown(tile);
+  }
+  else if (emptySpace.style.gridArea === "1 / 3 / 2 / 4") {
+    tileSlideUp(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 2 / 3 / 3") {
+    tileSlideLeft(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 7 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridSevenClicked(tile) {
-  console.log(tile + "in grid seven");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "3 / 2 / 4 / 3") {
+    tileSlideRight(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 1 / 3 / 2") {
+    tileSlideUp(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 8 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridEightClicked(tile) {
-  console.log(tile + "in grid eight");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "3 / 3 / 4 / 4") {
+    tileSlideRight(tile);
+  }
+  else if (emptySpace.style.gridArea === "2 / 2 / 3 / 3") {
+    tileSlideUp(tile);
+  }
+  else if (emptySpace.style.gridArea === "3 / 1 / 4 / 2") {
+    tileSlideLeft(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+/**
+ * Called by clickedTile when the tile in grid space 9 is clicked
+ * Checks if clicked tile is next to an empty space and either calls the correct slide function 
+ * or alerts user that the tile cannot be slid
+ */
 function gridNineClicked(tile) {
-  console.log(tile + "in grid nine");
+  let emptySpace = document.getElementById('tile-7');
+  if (emptySpace.style.gridArea === "2 / 3 / 3 / 4") {
+    tileSlideUp(tile);
+  }
+  else if (emptySpace.style.gridArea === "3 / 2 / 4 / 3") {
+    tileSlideLeft(tile);
+  }
+  else {
+    alert("Tile clicked cannot be slid into the empty space");
+  }
 }
 
+function tileSlideRight(tile) {
+  console.log("slide tile right");
+}
 
+function tileSlideLeft(tile) {
+  console.log("slide tile left");
+}
+
+function tileSlideUp(tile) {
+  console.log("slide tile up");
+}
+
+function tileSlideDown(tile) {
+  console.log("slide tile down");
+}
 
 
 
