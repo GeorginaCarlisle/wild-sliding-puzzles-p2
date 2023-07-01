@@ -324,6 +324,11 @@ function tileSlideDown(tile) {
   checkWin();
 }
 
+/**
+ * Called every time a tile is moved
+ * Checks to see if each tile is in it's correct start position
+ * Alerts user of their win
+ */
 function checkWin() {
   if (
     document.getElementById("tile-1").style.gridArea === "1 / 1 / 2 / 2"
