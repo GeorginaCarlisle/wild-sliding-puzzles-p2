@@ -1,3 +1,6 @@
+// Global variables that need to be accessible in multiple functions
+let preventClick = false;
+
 // Load page before setting the game picture
 window.onload = setGamePicture();
 
@@ -25,7 +28,11 @@ function setGamePicture() {
     let tile = document.getElementById('tile-' + (i+1));
     tile.style.backgroundImage = tilePictures[i];
     // Event listener added to each tile which passes the details of the tile clicked to the clickedTile function
-    tile.addEventListener('click', function(){ clickedTile(tile);});
+    tile.addEventListener('click', function(){ 
+      if (!preventClick){
+        clickedTile(tile);
+      } // clickedTile function will not run during tile slide and tile swap phases, see slideTileRight etc.
+    });
   }
   console.log("Game picture set");
   scrambleGamePicture();
@@ -272,44 +279,56 @@ function gridNineClicked(tile) {
  * Called when clickedTile is in the grid box to the left of the space (tile-7)
  * Initiates right-slide annimation to slide the clicked tile one grid box width to the right
  * Calls swapTile function after 450ms (annimation is 500ms)
+ * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideRight(tile) {
   console.log("slide tile right annimation activated");
   tile.style.animationName = "right-slide";
+  preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
+  setTimeout(function(){ preventClick = false; }, 500);
 }
 
 /**
  * Called when clickedTile is in the grid box to the right of the space (tile-7)
  * Initiates left-slide annimation to slide the clicked tile one grid box width to the right
  * Calls swapTile function after 450ms (annimation is 500ms)
+ * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideLeft(tile) {
   console.log("slide tile left annimation activated");
   tile.style.animationName = "left-slide";
+  preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
+  setTimeout(function(){ preventClick = false; }, 500);
 }
 
 /**
  * Called when clickedTile is in the grid box below the space (tile-7)
  * Initiates up-slide annimation to slide the clicked tile one grid box width to the right
  * Calls swapTile function after 450ms (annimation is 500ms)
+ * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideUp(tile) {
   console.log("slide tile up annimation activated");
   tile.style.animationName = "up-slide";
+  preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
+  setTimeout(function(){ preventClick = false; }, 500);
 }
 
 /**
  * Called when clickedTile is in the grid box above the space (tile-7)
  * Initiates down-slide annimation to slide the clicked tile one grid box width to the right
  * Calls swapTile function after 450ms (annimation is 500ms)
+ * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideDown(tile) {
   console.log("slide tile down annimation activated");
   tile.style.animationName = "down-slide";
+  preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
+  setTimeout(function(){ preventClick = false; }, 500);
 }
 
 /**
