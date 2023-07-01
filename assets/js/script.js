@@ -69,9 +69,13 @@ function scrambleGamePicture() {
  * Grid position of tile clicked analysed and corrosponding function (example gridOneClicked) called
  */
 function clickedTile(tile) {
-  console.log(tile);
-  let gridPosition = tile.style.gridArea;
-  console.log("Grid position of tile clicked is: " + gridPosition);
+  if (tile.id === "tile-7") {
+    alert("There is no tile here to click, it is an empty space");
+  }
+  else {
+    console.log(tile);
+    let gridPosition = tile.style.gridArea;
+    console.log("Grid position of tile clicked is: " + gridPosition);
     switch(gridPosition) {
       case "1 / 1 / 2 / 2": gridOneClicked(tile);
       break;
@@ -92,7 +96,8 @@ function clickedTile(tile) {
       case "3 / 3 / 4 / 4": gridNineClicked(tile);
       break;
       default: alert("tile not recognised, please contact developer");
-  } 
+    } 
+  }
 }
 
 /**
