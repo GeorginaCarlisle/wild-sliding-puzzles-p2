@@ -325,7 +325,23 @@ function tileSlideDown(tile) {
 }
 
 function checkWin() {
-  console.log("checking win");
+  if (
+    document.getElementById("tile-1").style.gridArea === "1 / 1 / 2 / 2"
+    && document.getElementById("tile-2").style.gridArea === "1 / 2 / 2 / 3"
+    && document.getElementById("tile-3").style.gridArea === "1 / 3 / 2 / 4"
+    && document.getElementById("tile-4").style.gridArea === "2 / 1 / 3 / 2"
+    && document.getElementById("tile-5").style.gridArea === "2 / 2 / 3 / 3"
+    && document.getElementById("tile-6").style.gridArea === "2 / 3 / 3 / 4"
+    && document.getElementById("tile-7").style.gridArea === "3 / 1 / 4 / 2"
+    && document.getElementById("tile-8").style.gridArea === "3 / 2 / 4 / 3"
+    && document.getElementById("tile-9").style.gridArea === "3 / 3 / 4 / 4"
+  ) {
+    alert("Puzzle completed! Well done!");
+    console.log("win achieved");
+  }
+  else {
+    console.log("win not achieved");
+  }
 }
 
 
