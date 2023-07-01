@@ -268,20 +268,64 @@ function gridNineClicked(tile) {
   }
 }
 
+/**
+ * Called when clickedTile is in the grid box to the left of the space (tile-7)
+ * Swaps grid position of clicked tile and tile-7 (empty space)
+ * Calls checkWin function
+ */
 function tileSlideRight(tile) {
-  console.log("slide tile right");
+  let tilePosition = tile.style.gridArea;
+  let spacePosition = document.getElementById("tile-7").style.gridArea;
+  console.log("slide tile right. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
+  tile.style.gridArea = spacePosition;
+  document.getElementById("tile-7").style.gridArea = tilePosition;
+  checkWin();
 }
 
+/**
+ * Called when clickedTile is in the grid box to the right of the space (tile-7)
+ * Swaps grid position of clicked tile and tile-7 (empty space)
+ * Calls checkWin function
+ */
 function tileSlideLeft(tile) {
-  console.log("slide tile left");
+  let tilePosition = tile.style.gridArea;
+  let spacePosition = document.getElementById("tile-7").style.gridArea;
+  console.log("slide tile left. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
+  tile.style.gridArea = spacePosition;
+  document.getElementById("tile-7").style.gridArea = tilePosition;
+  checkWin();
 }
 
+/**
+ * Called when clickedTile is in the grid box below the space (tile-7)
+ * Swaps grid position of clicked tile and tile-7 (empty space)
+ * Calls checkWin function
+ */
 function tileSlideUp(tile) {
-  console.log("slide tile up");
+  let tilePosition = tile.style.gridArea;
+  let spacePosition = document.getElementById("tile-7").style.gridArea;
+  console.log("slide tile up. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
+  tile.style.gridArea = spacePosition;
+  document.getElementById("tile-7").style.gridArea = tilePosition;
+  checkWin();
 }
 
+/**
+ * Called when clickedTile is in the grid box above the space (tile-7)
+ * Swaps grid position of clicked tile and tile-7 (empty space)
+ * Calls checkWin function
+ */
 function tileSlideDown(tile) {
-  console.log("slide tile down");
+  let tilePosition = tile.style.gridArea;
+  let spacePosition = document.getElementById("tile-7").style.gridArea;
+  console.log("slide tile down. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
+  tile.style.gridArea = spacePosition;
+  document.getElementById("tile-7").style.gridArea = tilePosition;
+  checkWin();
+}
+
+function checkWin() {
+  console.log("checking win");
 }
 
 
