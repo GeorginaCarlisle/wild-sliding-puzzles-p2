@@ -212,14 +212,19 @@ Link to testing.md
 
 ## Acknowledgements
 
+Sean from Code Institutes tutor support - For helping me to find the best way to prevent the tileSwap function from activating until the slide animation was complete. For also pointing out a future bug and the need to also prevent the click event listener from calling the tileClicked function until the tile slide and swap had completed.
+
 ### Websites, articles and tutorials
 
 [A Complete Guide to CSS Grid - CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/) - My knowledge and understanding of CSS grid and how to use it was picked up from this article.
 
+[grid-area - mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area) - I gained further understanding of the grid-area property and how to use correctly from this article.
+
 [How to Aspect Ratio - W3 Schools](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) - I used this article to find a way to set the height of my grid boxes relative to the width so that the box had an aspect ratio of 1:1.
 
+[JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - I learnt how to pass on a parameter as part of the eventlistener through this article.
 
-
+[Asynchronous JavaScript - W3 Schools](https://www.w3schools.com/js/js_asynchronous.asp) - I found this article helpful in understanding how to implement the TimeOut method.
 
 
 [Return to contents list](#contents)
