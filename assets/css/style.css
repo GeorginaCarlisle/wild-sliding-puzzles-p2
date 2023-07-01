@@ -20,4 +20,49 @@ body {
 .grid-box {
   border: 1px solid black;
   background-size: cover;
+  /* Animation settings that will activate once the clicked tile is given an animation name*/
+  position: relative;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+}
+
+/* Animations for tile slides activated in JavaScript 
+functions: tileSlideDown, tileSlideUp, tileSlideLeft tileSlideRight */
+@keyframes down-slide {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes up-slide {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 100%;
+  }
+}
+
+@keyframes left-slide {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes right-slide {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
 }

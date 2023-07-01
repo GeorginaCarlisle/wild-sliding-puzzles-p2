@@ -270,62 +270,67 @@ function gridNineClicked(tile) {
 
 /**
  * Called when clickedTile is in the grid box to the left of the space (tile-7)
- * Swaps grid position of clicked tile and tile-7 (empty space)
- * Calls checkWin function
+ * Initiates right-slide annimation to slide the clicked tile one grid box width to the right
+ * Calls swapTile function after 450ms (annimation is 500ms)
  */
 function tileSlideRight(tile) {
-  let tilePosition = tile.style.gridArea;
-  let spacePosition = document.getElementById("tile-7").style.gridArea;
-  console.log("slide tile right. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
-  tile.style.gridArea = spacePosition;
-  document.getElementById("tile-7").style.gridArea = tilePosition;
-  checkWin();
+  console.log("slide tile right annimation activated");
+  tile.style.animationName = "right-slide";
+  setTimeout(function(){ swapTile(tile);}, 450);
 }
 
 /**
  * Called when clickedTile is in the grid box to the right of the space (tile-7)
- * Swaps grid position of clicked tile and tile-7 (empty space)
- * Calls checkWin function
+ * Initiates left-slide annimation to slide the clicked tile one grid box width to the right
+ * Calls swapTile function after 450ms (annimation is 500ms)
  */
 function tileSlideLeft(tile) {
-  let tilePosition = tile.style.gridArea;
-  let spacePosition = document.getElementById("tile-7").style.gridArea;
-  console.log("slide tile left. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
-  tile.style.gridArea = spacePosition;
-  document.getElementById("tile-7").style.gridArea = tilePosition;
-  checkWin();
+  console.log("slide tile left annimation activated");
+  tile.style.animationName = "left-slide";
+  setTimeout(function(){ swapTile(tile);}, 450);
 }
 
 /**
  * Called when clickedTile is in the grid box below the space (tile-7)
- * Swaps grid position of clicked tile and tile-7 (empty space)
- * Calls checkWin function
+ * Initiates up-slide annimation to slide the clicked tile one grid box width to the right
+ * Calls swapTile function after 450ms (annimation is 500ms)
  */
 function tileSlideUp(tile) {
-  let tilePosition = tile.style.gridArea;
-  let spacePosition = document.getElementById("tile-7").style.gridArea;
-  console.log("slide tile up. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
-  tile.style.gridArea = spacePosition;
-  document.getElementById("tile-7").style.gridArea = tilePosition;
-  checkWin();
+  console.log("slide tile up annimation activated");
+  tile.style.animationName = "up-slide";
+  setTimeout(function(){ swapTile(tile);}, 450);
 }
 
 /**
  * Called when clickedTile is in the grid box above the space (tile-7)
- * Swaps grid position of clicked tile and tile-7 (empty space)
- * Calls checkWin function
+ * Initiates down-slide annimation to slide the clicked tile one grid box width to the right
+ * Calls swapTile function after 450ms (annimation is 500ms)
  */
 function tileSlideDown(tile) {
-  let tilePosition = tile.style.gridArea;
-  let spacePosition = document.getElementById("tile-7").style.gridArea;
-  console.log("slide tile down. Tile is at: " + tilePosition + ". space is at: " + spacePosition);
-  tile.style.gridArea = spacePosition;
-  document.getElementById("tile-7").style.gridArea = tilePosition;
-  checkWin();
+  console.log("slide tile down annimation activated");
+  tile.style.animationName = "down-slide";
+  setTimeout(function(){ swapTile(tile);}, 450);
 }
 
 /**
- * Called every time a tile is moved
+ * Called by tileSlideDown, tileSlideUp, tileSlideLeft or tileSlideRight following animation slide
+ * Unsets animation name and swaps the position of clicked tile and tile-7
+ * Calls checkWin function
+ */
+function swapTile(tile) {
+  tile.style.animationName = "";
+    let tilePosition = tile.style.gridArea;
+    console.log(tilePosition);
+    let spacePosition = document.getElementById("tile-7").style.gridArea;
+    console.log(spacePosition);
+    tile.style.gridArea = spacePosition;
+    document.getElementById("tile-7").style.gridArea = tilePosition;
+    console.log("tiles swapped");
+    checkWin();
+}
+
+/**
+ * Called every time a tile is moved by swapTile
  * Checks to see if each tile is in it's correct start position
  * Alerts user of their win
  */
@@ -348,6 +353,3 @@ function checkWin() {
     console.log("win not achieved");
   }
 }
-
-
-
