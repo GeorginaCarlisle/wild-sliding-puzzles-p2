@@ -32,9 +32,24 @@
 
   <nav>
     <button>Change puzzle</button>
+
+    <!-- The following modals were created following the steps given in 
+    'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp-->
+
     <button>Instructions</button>
     <button>Tips</button>
-    <button>Sneeky Peek</button>
+
+    <!-- Trigger to open Sneaky Peek modal -->
+    <button id="button-sneaky-peek">Sneaky Peek</button>
+    <!-- Sneaky Peek modal -->
+    <div id="modal-sneaky-peek" class="modal">
+      <span class="close">&times;</span>
+      <!-- Sneaky Peek content -->
+      <div class="modal-content">
+        <h2>Sneaky Peek</h2>
+        <img src="" alt="" id="sneaky-peek-pic">
+      </div>
+    </div>
   </nav>
 
   <footer>

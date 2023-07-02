@@ -4,6 +4,13 @@ let preventClick = false;
 // Load page before setting the game picture
 window.onload = setGamePicture();
 
+// Load page before adding event listeners to modal buttons
+window.onload = function() {
+  // Add click event listener to the Sneaky peek button
+  let btnSneakyPeek = document.getElementById("button-sneaky-peek");
+  btnSneakyPeek.addEventListener('click', sneakyPeak);
+}
+
 /**
  * Set game picture will be called once page has loaded.
  * A style background image will be applied to each tile in the grid, as well as a click event listener
@@ -375,5 +382,31 @@ function checkWin() {
   }
   else {
     console.log("win not achieved");
+  }
+}
+
+/**
+ * Called when the Sneaky peek button is clicked. Click event Listener activated on load.
+ * Sneaky Peek modal displayed block and visible. Sneaky Peek image added.
+ * Click event listener added to close symbol with anonymous function to hide modal.
+ * Tile click event listeners prevented from activating further code while modal displayed.
+ * This function was created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
+ */
+function sneakyPeak() {
+  // Display modal
+  let modal = document.getElementById("modal-sneaky-peek");
+  modal.style.display = "block";
+  // Prevent tile click event listeners for activating further code
+  preventClick = true;
+  // Add image
+  let image = document.getElementById("sneaky-peek-pic");
+  image.src = "assets/images/Puffin/puffin-sneaky-peek.webp";
+  // Add click event listener to close symbol that changes display back to none and re-hides modal
+  let closeCross = document.getElementsByClassName("close")[0];
+  closeCross.onclick = function() {
+    // Allow click event listeners to activate further code
+    preventClick = false;
+    // Hide modal 
+    modal.style.display = "none";
   }
 }

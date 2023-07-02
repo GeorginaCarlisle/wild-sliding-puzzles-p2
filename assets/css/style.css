@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
 /* Styling specefic to the puzzle */
 
 #puzzle-grid-container {
@@ -65,4 +69,42 @@ functions: tileSlideDown, tileSlideUp, tileSlideLeft tileSlideRight */
   to {
     left: 100%;
   }
+}
+
+/* Styling for the three modal pop-ups. The following was created following the steps given in 
+    'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp */
+.modal {
+  display: none; /* The modals will not be displayed until activated by JavaScript */
+  position: fixed;
+  z-index: 1;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  top: 10%;
+  background-color: white;
+  border: 4px solid black;
+}
+
+.modal-content {
+  margin: 5% auto;
+  width: 90%;
+}
+
+.close {
+  float: right;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.close:hover, .close:focus {
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sneaky-peek-pic {
+  width: 100%;
 }
