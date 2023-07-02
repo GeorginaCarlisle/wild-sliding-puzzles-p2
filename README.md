@@ -208,6 +208,9 @@ Link to testing.md
 
 ## Credits
 
+### Code
+- **HTML, CSS and JavaScript code used to create modals**: I followed the steps given in the article [How To - CSS/JS Modal by W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) to create the modals used within this project, adjusting the code to meet my requirements.
+
 [Return to contents list](#contents)
 
 ## Acknowledgements
