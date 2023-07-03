@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fun sliding puzzle game inspired by our 'Wild Isles'. Can you 
+    unscramble the picture to learn more about some of the fantastic wildlife that can be found in 
+    the British Isles?">
+  <meta name="keywords" content="sliding puzzle, puzzle game, wildlife, wild isles">
+
+  <!-- Link to css styling sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Puzzle completed</title>
+
+</head>
+<body>
+  <main>
+    <h1>Wild Sliding Puzzles</h1>
+  
+    <!-- This div will be filled with the original picture from the puzzle completed -->
+    <div id="original-picture"></div>
+
+    <h2>
+      Congratulations! You have found a 
+      <!-- This span will be filled with the name of picture's subject -->
+      <span id="subject"></span>
+    </h2>
+
+    <!-- Container to allow the paragraph information and buttons to be positioned together -->
+    <div id="container-subject-information">
+
+      <!-- This paragraph will be filled with information specific to the subject of the puzzle completed -->
+      <p id="subject"></p>
+
+      <!-- Buttons to be positioned together -->
+      <nav>
+        <!-- <a> tag used for these buttons as they are page links or external links. This is so that semantics are clear, they have then been styled as a button -->
+        <a href="puzzle.html" class="anchor-button" aria-label="Return to the puzzle page to solve a new puzzle">
+          Play again
+        </a>
+        <a 
+          href="https://www.saveourwildisles.org.uk" 
+          class="anchor-button" 
+          target="_blank" 
+          rel="noopener" 
+          aria-label="Visit Save Our Wild Isles to learn more (opens in a new tab)">
+          Learn more about our Wild Isles
+        </a>
+      </nav>
+
+    </div>
+  
+  </main>
+    
+  <footer>
+    <p>Created by Georgina Carlisle for educational purposes only 2023</p>
+        
+    <!-- Container to keep linkedin and github links together -->
+    <div>
+      <a>External link to linkedIn</a>
+      <a>External link to Github</a>
+    </div>
+
+    <!-- Container to keep link and associated text together -->
+    <div>
+      <p>Inspired by Wild Isles</p>
+      <a>External link to the Wild Isles project</a>
+    </div>
+  </footer>
+  
+  <!-- Link to the JavaScript file -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
