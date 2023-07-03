@@ -377,7 +377,7 @@ function checkWin() {
     && document.getElementById("tile-8").style.gridArea === "3 / 2 / 4 / 3"
     && document.getElementById("tile-9").style.gridArea === "3 / 3 / 4 / 4"
   ) {
-    alert("Puzzle completed! Well done!");
+    open("win.html");
     console.log("win achieved");
   }
   else {
