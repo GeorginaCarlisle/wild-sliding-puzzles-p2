@@ -2,7 +2,9 @@
 let preventClick = false;
 
 // Load page before setting the game picture
-window.onload = setGamePicture();
+window.onload = chooseGamePicture();
+
+// window.onload = setGamePicture();
 
 // Load page before adding event listeners to modal buttons
 window.onload = function() {
@@ -12,12 +14,70 @@ window.onload = function() {
 }
 
 /**
+ * Called on load
+ * Generates a random number
+ */
+function chooseGamePicture() {
+  // Generate a random number, range of random numbers generated reflects the number of puzzle pictures available
+  let pictureNumber = Math.floor(Math.random() * 0);
+  console.log("picture number chosen is " + pictureNumber);
+  // link to session storage
+  let previousPictureNumbers = sessionStorage.getItem("completedPictures");
+  // Check to see if any pictures have been completed
+  if (previousPictureNumbers){
+    // There has been a previous picture number saved
+    for (let previousPictureNumber of previousPictureNumbers) {
+      console.log("Previous picture number is: " + previousPictureNumber);
+      console.log("New picture number is: " + pictureNumber);
+      // Check to see if picture number matches previousPictureNumber
+      if (pictureNumber == previousPictureNumber) {
+        // Picture numbers do match
+        let i = 0;
+        while (pictureNumber == previousPictureNumber) {
+          console.log("While loop running");
+          console.log("loop number: " + i);
+          i++;
+          // generate a new random number until there is no match
+          pictureNumber = Math.floor(Math.random() * 0);
+          console.log("New picture number is: " + pictureNumber);
+          // break out clause to prevent loop from running indefinitely
+          if (i === 10) {
+            console.log ("breaking out after 10 iterations");
+            break;
+          }
+          else {
+            continue;
+          }
+        }
+      }
+    }
+        // Picture numbers didn't match or new picture number now generated that doesn't match
+        console.log("New picture confirmed as: " + pictureNumber);
+        // New picture number now added into array. BUG Currently not working as it should
+        previousPictureNumbers.push(pictureNumber);
+        console.log(previousPictureNumbers);
+        // Call setGamePicture and pass on the chosen picture number
+        setGamePicture(pictureNumber);
+  }
+
+  // no completedPictures data currently stored. This is the first picture to be completed in this tab.
+  else {
+    let previousPictureNumbers = [pictureNumber];
+    sessionStorage.setItem("completedPictures", previousPictureNumbers);
+    // Call setGamePicture and pass on the chosen picture number
+    setGamePicture(pictureNumber);
+  }
+}
+
+
+/**
  * Set game picture will be called once page has loaded.
  * A style background image will be applied to each tile in the grid, as well as a click event listener
  * the background image for tile 7 will remain empty
  * picture is set correct at this point and the scramblePicture function will now be called
  */
-function setGamePicture() {
+function setGamePicture(pictureNumber) {
+  if (pictureNumber === 0){
   let tilePictures = [
     `url(assets/images/Puffin/puffin-tile-1.webp)`,
     `url(assets/images/Puffin/puffin-tile-2.webp)`,
@@ -40,6 +100,7 @@ function setGamePicture() {
         clickedTile(tile);
       } // clickedTile function will not run during tile slide and tile swap phases, see slideTileRight etc.
     });
+  }
   }
   console.log("Game picture set");
   scrambleGamePicture();
