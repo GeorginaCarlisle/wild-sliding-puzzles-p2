@@ -15,7 +15,9 @@ window.onload = function() {
 
 /**
  * Called on load
- * Generates a random number
+ * Generates a random number and checks to see if that puzzle number has already been completed
+ * While there is a match a new number will be genereated until no match is present, a break out after 100 iterations is included
+ * New puzzle number saved in local storage and setGamePicture is called
  */
 function chooseGamePicture() {
   // Generate a random number, range of random numbers generated reflects the number of puzzle pictures available
