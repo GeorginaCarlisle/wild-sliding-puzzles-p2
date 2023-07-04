@@ -462,8 +462,7 @@ function checkWin() {
     && document.getElementById("tile-8").style.gridArea === "3 / 2 / 4 / 3"
     && document.getElementById("tile-9").style.gridArea === "3 / 3 / 4 / 4"
   ) {
-    open("win.html");
-    console.log("win achieved");
+    open("win.html", "_self");
   }
   else {
     console.log("win not achieved");
