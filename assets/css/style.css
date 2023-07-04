@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
 h1, h2 {
   text-align: center;
 }
@@ -10,11 +14,35 @@ h1, h2 {
 .image-container {
   width: 80%;
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .image {
   width: 100%;
 }
+
+.text-container {
+  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styling specific to index.html */
+
+#key-word-paragraph {
+  display: flex;
+  justify-content: space-around;
+  font-size: larger;
+}
+
 
 /* Styling specefic to the puzzle */
 
