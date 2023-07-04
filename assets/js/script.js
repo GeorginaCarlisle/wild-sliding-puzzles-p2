@@ -57,9 +57,8 @@ function chooseGamePicture() {
         // break out clause to prevent loop from running indefinitely
         if (loop === 100) {
           console.log ("breaking out after 100 iterations");
-          alert("All available puzzles completed. You will now be returned to the landing page and puzzle data will be reset")
-          sessionStorage.clear();
-          open("index.html");
+          sessionStorage.removeItem("completedPictures");
+          alert("All available puzzles have now been viewed. Puzzle data will now be reset and previously shown puzzles will be shown again")
           break;
         }
         else {
@@ -68,7 +67,8 @@ function chooseGamePicture() {
       }
       // New picture number now generated that doesn't match
       console.log("New picture confirmed as: " + pictureNumber);
-      // New picture number now added to the string
+      // New picture number now added to the string. Reset previousPictureNumbers variable to pick up clearing of data when all puzzles have been completed.
+      previousPictureNumbers = sessionStorage.getItem("completedPictures");
       let newPictureNumbers = previousPictureNumbers + pictureNumber;
       console.log("New picture numbers are: " + newPictureNumbers);
       sessionStorage.setItem("completedPictures", newPictureNumbers);
