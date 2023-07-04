@@ -448,7 +448,7 @@ function swapTile(tile) {
 /**
  * Called every time a tile is moved by swapTile
  * Checks to see if each tile is in it's correct start position
- * Alerts user of their win
+ * When win is achieved win.html is then opened in the current tab
  */
 function checkWin() {
   if (
