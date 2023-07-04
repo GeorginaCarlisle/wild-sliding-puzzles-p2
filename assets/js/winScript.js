@@ -11,6 +11,7 @@ function locatePuzzleNumber() {
   let currentPuzzle = completedPuzzleNumbers.charAt(completedPuzzleNumbers.length -1);
   console.log("Puzzle completed: " + currentPuzzle); 
   loadPuzzlePicture(currentPuzzle);
+  loadPuzzleName(currentPuzzle);
 }
 
 /**
@@ -29,4 +30,22 @@ function loadPuzzlePicture(currentPuzzle) {
   }
   let pictureContainer = document.getElementById("original-picture");
   pictureContainer.innerHTML = puzzlePicture;
+}
+
+/**
+ * Called by locatePuzzleNumber
+ * currentPuzzle argument is used to select corrosponding puzzle name
+ * Puzzle name is then loaded to the DOM
+ */
+function loadPuzzleName(currentPuzzle) {
+  let puzzleName = "";
+  switch (currentPuzzle) {
+    case "0":
+      puzzleName = "Puffin";
+    break;
+    default: alert("puzzle completed not recoginsed, please contact developer");
+    break;
+  }
+  let nameSpan = document.getElementById("subject");
+  nameSpan.innerHTML = puzzleName;
 }
