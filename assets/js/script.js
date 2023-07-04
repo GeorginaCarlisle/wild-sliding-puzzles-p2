@@ -86,24 +86,34 @@ function chooseGamePicture() {
 
 
 /**
- * Set game picture will be called once page has loaded.
+ * Set game picture will be called once a game picture has been randomly chosen.
+ * pictureNumber argument is used to select corrosponding tile pictures
  * A style background image will be applied to each tile in the grid, as well as a click event listener
  * the background image for tile 7 will remain empty
  * picture is set correct at this point and the scramblePicture function will now be called
  */
 function setGamePicture(pictureNumber) {
-  if (pictureNumber === 0){
-  let tilePictures = [
-    `url(assets/images/Puffin/puffin-tile-1.webp)`,
-    `url(assets/images/Puffin/puffin-tile-2.webp)`,
-    `url(assets/images/Puffin/puffin-tile-3.webp)`,
-    `url(assets/images/Puffin/puffin-tile-4.webp)`,
-    `url(assets/images/Puffin/puffin-tile-5.webp)`,
-    `url(assets/images/Puffin/puffin-tile-6.webp)`,
-    ``,
-    `url(assets/images/Puffin/puffin-tile-8.webp)`,
-    `url(assets/images/Puffin/puffin-tile-9.webp)`,
-  ];
+  // Locate tilePictures for pictureNumber chosen
+  let tilePictures = [];
+  switch(pictureNumber) {
+    case 0: 
+      tilePictures = [
+      `url(assets/images/Puffin/puffin-tile-1.webp)`,
+      `url(assets/images/Puffin/puffin-tile-2.webp)`,
+      `url(assets/images/Puffin/puffin-tile-3.webp)`,
+      `url(assets/images/Puffin/puffin-tile-4.webp)`,
+      `url(assets/images/Puffin/puffin-tile-5.webp)`,
+      `url(assets/images/Puffin/puffin-tile-6.webp)`,
+      ``,
+      `url(assets/images/Puffin/puffin-tile-8.webp)`,
+      `url(assets/images/Puffin/puffin-tile-9.webp)`,
+      ];
+    break;
+    default:
+      console.log("No match for picture number");
+      alert("puzzle pictures cannot be found, please contact developer");
+    break;
+  }
   let numberOfTiles = tilePictures.length;
   // loop assigning each tile in turn an image, images applied in array order so that the correct image ends up in the correct tile
   for (let i = 0; i < numberOfTiles; i++) {
@@ -115,7 +125,6 @@ function setGamePicture(pictureNumber) {
         clickedTile(tile);
       } // clickedTile function will not run during tile slide and tile swap phases, see slideTileRight etc.
     });
-  }
   }
   console.log("Game picture set");
   scrambleGamePicture();
