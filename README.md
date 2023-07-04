@@ -235,6 +235,10 @@ Sean from Code Institutes tutor support - For helping me to find the best way to
 
 [View and edit session storage - Chrome Developers](https://developer.chrome.com/docs/devtools/storage/sessionstorage/#:~:text=%23%20View%20sessionStorage%20keys%20and%20values,Expand%20the%20Session%20Storage%20menu.&text=Click%20a%20domain%20to%20view%20its%20key%2Dvalue%20pairs.&text=Click%20a%20row%20of%20the,the%20viewer%20below%20the%20table) - I found this article helpful in learning how to track the data being stored in session storage.
 
-[JavaScript String search()](https://www.w3schools.com/jsref/jsref_search.asp) - This article showed me how to check for a match within a string without needing to iterate through the string.
+[JavaScript String search() - W3 Schools](https://www.w3schools.com/jsref/jsref_search.asp) - This article showed me how to check for a match within a string without needing to iterate through the string.
+
+[Window: open() method - mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) - I learnt about using javascript to open a new window and how to control where and how it opens from this article.
+
+[Get the last Character of a String in JavaScript - Borislav Hadzhiev](https://bobbyhadz.com/blog/javascript-get-last-character-of-string#:~:text=To%20get%20the%20last%20character,last%20character%20of%20the%20string.) - I learnt how to quickly find the last character in a string from thos blog.
 
 [Return to contents list](#contents)
