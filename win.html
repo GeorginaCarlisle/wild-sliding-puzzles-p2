@@ -31,7 +31,7 @@
     <div id="container-subject-information">
 
       <!-- This paragraph will be filled with information specific to the subject of the puzzle completed -->
-      <div id="subject"></div>
+      <div id="subject" class="text-container"></div>
 
       <!-- Buttons to be positioned together -->
       <nav>
@@ -54,22 +54,40 @@
   </main>
     
   <footer>
-    <p>Created by Georgina Carlisle for educational purposes only 2023</p>
-        
-    <!-- Container to keep linkedin and github links together -->
-    <div>
-      <a>External link to linkedIn</a>
-      <a>External link to Github</a>
-    </div>
-
-    <!-- Container to keep link and associated text together -->
-    <div>
-      <p>Inspired by Wild Isles</p>
-      <a>External link to the Wild Isles project</a>
+    <div id="footer-contents">
+      <p>Created by Georgina Carlisle for educational purposes only 2023</p>
+      <!-- Container to keep linkedin and github links together -->
+      <span>
+        <a href="https://github.com/GeorginaCarlisle" 
+          target="_blank" 
+          rel="noopener" 
+          aria-label="Visit my GitHub profile (opens in a new tab)">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/georgina-carlisle-617b58268" 
+          target="_blank" 
+          rel="noopener" 
+          aria-label="Visit my linkedin profile (opens in a new tab)">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </span>
+      <!-- Container to keep link and associated text together -->
+      <span id="wild-isles">
+        <p>Inspired by Wild Isles</p>
+        <a href="https://www.saveourwildisles.org.uk"
+          target="_blank" 
+          rel="noopener" 
+          aria-label="Visit Save our Wild Isles (opens in a new tab)">
+          <i class="fa-solid fa-paw"></i>
+        </a>
+      </span>
     </div>
   </footer>
   
   <!-- Link to the JavaScript file -->
   <script src="assets/js/winScript.js"></script>
+  <!-- Script for fontawesome icons, copied from https://fontawesome.com/ -->
+  <script src="https://kit.fontawesome.com/ab3127d928.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
