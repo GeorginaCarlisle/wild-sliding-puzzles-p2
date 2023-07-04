@@ -7,6 +7,15 @@ h1, h2 {
   text-align: center;
 }
 
+.image-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+}
+
 /* Styling specefic to the puzzle */
 
 #puzzle-grid-container {
@@ -108,3 +117,5 @@ functions: tileSlideDown, tileSlideUp, tileSlideLeft tileSlideRight */
 #sneaky-peek-pic {
   width: 100%;
 }
+
+/* Styling specific to the win page 
