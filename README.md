@@ -225,9 +225,16 @@ Sean from Code Institutes tutor support - For helping me to find the best way to
 
 [How to Aspect Ratio - W3 Schools](https://www.w3schools.com/howto/howto_css_aspect_ratio.asp) - I used this article to find a way to set the height of my grid boxes relative to the width so that the box had an aspect ratio of 1:1.
 
-[JavaScript HTML DOM EventListener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - I learnt how to pass on a parameter as part of the eventlistener through this article.
+[JavaScript HTML DOM EventListener - W3 Schools](https://www.w3schools.com/js/js_htmldom_eventlistener.asp) - I learnt how to pass on a parameter as part of the eventlistener through this article.
 
 [Asynchronous JavaScript - W3 Schools](https://www.w3schools.com/js/js_asynchronous.asp) - I found this article helpful in understanding how to implement the TimeOut method.
 
+[Window: sessionStorage property - mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) - I found this article helpful in learning how to store information that can then be used by different pages within the same tab.
+
+[Window sessionStorage - W3 Schools](https://www.w3schools.com/jsref/prop_win_sessionstorage.asp) - I found this article helpful in learning how to store information that can then be used by different pages within the same tab.
+
+[View and edit session storage - Chrome Developers](https://developer.chrome.com/docs/devtools/storage/sessionstorage/#:~:text=%23%20View%20sessionStorage%20keys%20and%20values,Expand%20the%20Session%20Storage%20menu.&text=Click%20a%20domain%20to%20view%20its%20key%2Dvalue%20pairs.&text=Click%20a%20row%20of%20the,the%20viewer%20below%20the%20table) - I found this article helpful in learning how to track the data being stored in session storage.
+
+[JavaScript String search()](https://www.w3schools.com/jsref/jsref_search.asp) - This article showed me how to check for a match within a string without needing to iterate through the string.
 
 [Return to contents list](#contents)
