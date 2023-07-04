@@ -26,44 +26,57 @@ function chooseGamePicture() {
   // Check to see if any pictures have been completed
   if (previousPictureNumbers){
     // There has been a previous picture number saved
-    for (let previousPictureNumber of previousPictureNumbers) {
-      console.log("Previous picture number is: " + previousPictureNumber);
-      console.log("New picture number is: " + pictureNumber);
-      // Check to see if picture number matches previousPictureNumber
-      if (pictureNumber == previousPictureNumber) {
-        // Picture numbers do match
-        let i = 0;
-        while (pictureNumber == previousPictureNumber) {
-          console.log("While loop running");
-          console.log("loop number: " + i);
-          i++;
-          // generate a new random number until there is no match
-          pictureNumber = Math.floor(Math.random() * 0);
-          console.log("New picture number is: " + pictureNumber);
-          // break out clause to prevent loop from running indefinitely
-          if (i === 10) {
-            console.log ("breaking out after 10 iterations");
-            break;
-          }
-          else {
-            continue;
-          }
+    let positionOfMatch = previousPictureNumbers.search(pictureNumber);
+    console.log("Position match is: " + positionOfMatch);
+    // New number doesn't match any of previous numbers
+    if (positionOfMatch === -1) {
+      console.log("New picture confirmed as: " + pictureNumber);
+      // New picture number now added to the string
+      let newPictureNumbers = previousPictureNumbers + pictureNumber;
+      console.log("New picture numbers are: " + newPictureNumbers);
+      sessionStorage.setItem("completedPictures", newPictureNumbers);
+      // Call setGamePicture and pass on the chosen picture number
+      setGamePicture(pictureNumber);
+    }
+    // New number does match a previous number
+    else {
+      // Following loop to run until there is no match, or break point reached
+      let loop = 0;
+      while (positionOfMatch !== -1) {
+        console.log("While loop running");
+        console.log("loop number: " + loop);
+        loop++;
+        // generate a new random number
+        pictureNumber = Math.floor(Math.random() * 0);
+        console.log("New picture number is: " + pictureNumber);
+        // checks for a match
+        positionOfMatch = previousPictureNumbers.search(pictureNumber);
+        console.log("Position match is: " + positionOfMatch);
+        // break out clause to prevent loop from running indefinitely
+        if (loop === 100) {
+          console.log ("breaking out after 100 iterations");
+          alert("All available puzzles completed. You will now be returned to the landing page and puzzle data will be reset")
+          sessionStorage.clear();
+          open("index.html");
+          break;
+        }
+        else {
+          continue;
         }
       }
+      // New picture number now generated that doesn't match
+      console.log("New picture confirmed as: " + pictureNumber);
+      // New picture number now added to the string
+      let newPictureNumbers = previousPictureNumbers + pictureNumber;
+      console.log("New picture numbers are: " + newPictureNumbers);
+      sessionStorage.setItem("completedPictures", newPictureNumbers);
+      // Call setGamePicture and pass on the chosen picture number
+      setGamePicture(pictureNumber);
     }
-        // Picture numbers didn't match or new picture number now generated that doesn't match
-        console.log("New picture confirmed as: " + pictureNumber);
-        // New picture number now added into array. BUG Currently not working as it should
-        previousPictureNumbers.push(pictureNumber);
-        console.log(previousPictureNumbers);
-        // Call setGamePicture and pass on the chosen picture number
-        setGamePicture(pictureNumber);
   }
-
   // no completedPictures data currently stored. This is the first picture to be completed in this tab.
   else {
-    let previousPictureNumbers = [pictureNumber];
-    sessionStorage.setItem("completedPictures", previousPictureNumbers);
+    sessionStorage.setItem("completedPictures", pictureNumber);
     // Call setGamePicture and pass on the chosen picture number
     setGamePicture(pictureNumber);
   }
