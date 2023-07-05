@@ -201,4 +201,13 @@ ul {
   padding-inline-start: 1rem;
 }
 
+/* Tips modal */
+.tips-image {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Styling specific to the win page 

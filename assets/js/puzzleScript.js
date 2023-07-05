@@ -14,6 +14,9 @@ window.onload = function() {
   // Add click event listener to the Instructions button
   let btnInstructions = document.getElementById("button-instructions");
   btnInstructions.addEventListener('click', instructions);
+  // Add click event listener to the Tips button
+  let btnTips = document.getElementById("button-tips");
+  btnTips.addEventListener('click', tips);
 }
 
 /**
@@ -493,7 +496,7 @@ function sneakyPeak() {
   let image = document.getElementById("sneaky-peek-pic");
   image.src = "assets/images/Puffin/puffin-sneaky-peek.webp";
   // Add click event listener to close symbol that changes display back to none and re-hides modal
-  let closeCross = document.getElementsByClassName("close")[0];
+  let closeCross = document.getElementById("close-sneaky-peek");
   closeCross.onclick = function() {
     // Allow click event listeners to activate further code
     preventClick = false;
@@ -515,7 +518,29 @@ function instructions() {
   // Prevent tile click event listeners for activating further code
   preventClick = true;
   // Add click event listener to close symbol that changes display back to none and re-hides modal
-  let closeCross = document.getElementsByClassName("close")[0];
+  let closeCross = document.getElementById("close-instructions");
+  closeCross.onclick = function() {
+    // Allow click event listeners to activate further code
+    preventClick = false;
+    // Hide modal 
+    modal.style.display = "none";
+  }
+}
+
+/**
+ * Called when the Tips button is clicked. Click event Listener activated on load.
+ * Tips modal displayed block and visible. 
+ * Click event listener added to close symbol with anonymous function to hide modal.
+ * Tile click event listeners prevented from activating further code while modal displayed.
+ */
+function tips() {
+  // Display modal
+  let modal = document.getElementById("modal-tips");
+  modal.style.display = "block";
+  // Prevent tile click event listeners for activating further code
+  preventClick = true;
+  // Add click event listener to close symbol that changes display back to none and re-hides modal
+  let closeCross = document.getElementById("close-tips");
   closeCross.onclick = function() {
     // Allow click event listeners to activate further code
     preventClick = false;
