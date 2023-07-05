@@ -37,7 +37,33 @@
       <!-- The following modals were created following the steps given in 
       'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp-->
       
-      <button>Instructions</button>
+      <!-- Trigger to open instructions modal -->
+      <button id="button-instructions">Instructions</button>
+      <!-- Instructions modal -->
+      <div id="modal-instructions" class="modal">
+        <span class="close">&times;</span>
+        <!-- Instructions content -->
+        <div class="modal-content">
+          <section>
+            <h2>Instructions</h2>
+              <ol>
+              <li>Click on a tile to slide it into the empty space</li>
+              <li>Only tiles next to an empty space can be moved</li>
+              <li>Slide the tiles around so that one by one they slot into their correct position (this will take a number of moves)</li>
+              <li>When correctly placed the tiles will form an image</li>
+              <li>Have a go, play around and see if you can find a way to get all the tiles into the correct position</li>
+            </ol>
+          </section>
+          <section id="help-section">
+            <p>If you are feeling stuck:</p>
+            <ul>
+              <li>See what the completed puzzle looks like by clicking the <strong>Sneaky Peek</strong> button</li>
+              <li>Or get some tips by clicking the <strong>Tips</strong> button</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
       <button>Tips</button>
 
       <!-- Trigger to open Sneaky Peek modal -->

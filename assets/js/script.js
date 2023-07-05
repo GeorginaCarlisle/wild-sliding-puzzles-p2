@@ -11,6 +11,9 @@ window.onload = function() {
   // Add click event listener to the Sneaky peek button
   let btnSneakyPeek = document.getElementById("button-sneaky-peek");
   btnSneakyPeek.addEventListener('click', sneakyPeak);
+  // Add click event listener to the Instructions button
+  let btnInstructions = document.getElementById("button-instructions");
+  btnInstructions.addEventListener('click', instructions);
 }
 
 /**
@@ -469,12 +472,16 @@ function checkWin() {
   }
 }
 
+/** 
+ * The following modal functions: sneakyPeak, instructions and tips 
+ * were created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
+*/
+
 /**
  * Called when the Sneaky peek button is clicked. Click event Listener activated on load.
  * Sneaky Peek modal displayed block and visible. Sneaky Peek image added.
  * Click event listener added to close symbol with anonymous function to hide modal.
  * Tile click event listeners prevented from activating further code while modal displayed.
- * This function was created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
  */
 function sneakyPeak() {
   // Display modal
@@ -485,6 +492,28 @@ function sneakyPeak() {
   // Add image
   let image = document.getElementById("sneaky-peek-pic");
   image.src = "assets/images/Puffin/puffin-sneaky-peek.webp";
+  // Add click event listener to close symbol that changes display back to none and re-hides modal
+  let closeCross = document.getElementsByClassName("close")[0];
+  closeCross.onclick = function() {
+    // Allow click event listeners to activate further code
+    preventClick = false;
+    // Hide modal 
+    modal.style.display = "none";
+  }
+}
+
+/**
+ * Called when the Instructions button is clicked. Click event Listener activated on load.
+ * Instructions modal displayed block and visible. 
+ * Click event listener added to close symbol with anonymous function to hide modal.
+ * Tile click event listeners prevented from activating further code while modal displayed.
+ */
+function instructions() {
+  // Display modal
+  let modal = document.getElementById("modal-instructions");
+  modal.style.display = "block";
+  // Prevent tile click event listeners for activating further code
+  preventClick = true;
   // Add click event listener to close symbol that changes display back to none and re-hides modal
   let closeCross = document.getElementsByClassName("close")[0];
   closeCross.onclick = function() {
