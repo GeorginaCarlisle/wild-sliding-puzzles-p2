@@ -49,6 +49,7 @@ function loadPuzzleName(currentPuzzle) {
   }
   let nameSpan = document.getElementById("subject");
   nameSpan.innerHTML = puzzleName;
+  console.log("Puzzle name is:" + puzzleName)
 }
 
 /**
@@ -80,6 +81,6 @@ function loadPuzzleInformation(currentPuzzle) {
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
   }
-  let nameSpan = document.getElementById("subject");
+  let nameSpan = document.getElementById("information");
   nameSpan.innerHTML = puzzleInformation;
 }
