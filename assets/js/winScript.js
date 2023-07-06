@@ -137,6 +137,14 @@ function allPuzzlesSeen() {
   button.addEventListener('click', resetSessionStorage);
 }
 
-function resetSessionStorage (){
-
+/**
+ * Called when the play again button is clicked
+ * Prevents loading of puzzle.html and clears session storage
+ * Then opens puzzle.html
+ */
+function resetSessionStorage (event){
+  event.preventDefault();
+  sessionStorage.removeItem("completedPictures");
+  console.log("storage cleared");
+  open("puzzle.html", "_self");
 }
