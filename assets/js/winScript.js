@@ -13,6 +13,7 @@ function locatePuzzleNumber() {
   loadPuzzlePicture(currentPuzzle);
   loadPuzzleName(currentPuzzle);
   loadPuzzleInformation(currentPuzzle);
+  checkPuzzlesCompleted(completedPuzzleNumbers);
 }
 
 /**
@@ -107,4 +108,20 @@ function loadPuzzleInformation(currentPuzzle) {
   }
   let nameSpan = document.getElementById("information");
   nameSpan.innerHTML = puzzleInformation;
+}
+
+/**
+ * Called by locatePuzzleNumber and passed the completed puzzle numbers
+ * Length of string checked to see if all puzzles have been seen
+ * Call allPuzzlesSeen if true
+ */
+function checkPuzzlesCompleted(completedPuzzleNumbers) {
+  if (completedPuzzleNumbers.length === 2) {
+    allPuzzlesSeen();
+    console.log("all puzzles seen");
+  }
+}
+
+function allPuzzlesSeen() {
+
 }
