@@ -26,6 +26,9 @@ function loadPuzzlePicture(currentPuzzle) {
     case "0":
       puzzlePicture = `<img src="assets/images/Puffin/puffin-original.webp" alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." class="image">`;
     break;
+    case "1":
+      puzzlePicture = `<img src="assets/images/bee/bee-original.webp" alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." class="image">`;
+    break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
   }
@@ -43,6 +46,9 @@ function loadPuzzleName(currentPuzzle) {
   switch (currentPuzzle) {
     case "0":
       puzzleName = "Puffin";
+    break;
+    case "1":
+      puzzleName = "Bee";
     break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
@@ -77,6 +83,24 @@ function loadPuzzleInformation(currentPuzzle) {
         and sandeels. But the climate crisis warming our oceans means these cold-water fish are on the decline, a 
         problem that’s being made worse by sandeel fisheries.</P>
         <p>`;
+    break;
+    case "1":
+      puzzleInformation = `
+      <p>Where would we be without bees?</p>
+      <p>They’re vital to food security and part of the backbone of our wild isles, allowing the UK to support a rich 
+      diversity of plants and wildlife. But with bee numbers in global decline, protecting them needs to be high on 
+      everyone’s agenda.</P>
+      <p>We most often think of honeybees and bumblebees, but did you know there are 270 species of bee in the UK? 
+      Each one plays a special role in keeping our meadows, woodlands, heathlands and hedgerows alive, with forager 
+      bees flying incredible distances for pollen and nectar, pollinating trees and flowers as they go.</p>
+      <p>It’s hard to illustrate just how important these industrious insects are to us. They’re part of how we support 
+      a rich biodiversity of plants and wildlife and are essential to our food and economy – globally, around a third 
+      of our crops depend on bees and other pollinators.</p>
+      <p>To protect bees and other insects, we need to restore wild areas and plant more wildflowers. We need to support 
+      our farmers to produce food in a nature-friendly way and reduce the use of harmful pesticides. And we need to 
+      continue to fight for a stable climate.</p>
+      <p>Bees are critical for nature and our own survival. If we’re going to bring our world back to life, bees are a 
+      good place to start.</p>`;
     break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;

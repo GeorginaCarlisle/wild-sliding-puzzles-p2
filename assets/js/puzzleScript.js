@@ -27,7 +27,7 @@ window.onload = function() {
  */
 function chooseGamePicture() {
   // Generate a random number, range of random numbers generated reflects the number of puzzle pictures available
-  let pictureNumber = Math.floor(Math.random() * 0);
+  let pictureNumber = Math.floor(Math.random() * 2);
   console.log("picture number chosen is " + pictureNumber);
   // link to session storage
   let previousPictureNumbers = sessionStorage.getItem("completedPictures");
@@ -55,7 +55,7 @@ function chooseGamePicture() {
         console.log("loop number: " + loop);
         loop++;
         // generate a new random number
-        pictureNumber = Math.floor(Math.random() * 0);
+        pictureNumber = Math.floor(Math.random() * 2);
         console.log("New picture number is: " + pictureNumber);
         // checks for a match
         positionOfMatch = previousPictureNumbers.search(pictureNumber);
@@ -113,6 +113,19 @@ function setGamePicture(pictureNumber) {
       ``,
       `url(assets/images/Puffin/puffin-tile-8.webp)`,
       `url(assets/images/Puffin/puffin-tile-9.webp)`,
+      ];
+    break;
+    case 1:
+      tilePictures = [
+      `url(assets/images/bee/bee-tile-1.webp)`,
+      `url(assets/images/bee/bee-tile-2.webp)`,
+      `url(assets/images/bee/bee-tile-3.webp)`,
+      `url(assets/images/bee/bee-tile-4.webp)`,
+      `url(assets/images/bee/bee-tile-5.webp)`,
+      `url(assets/images/bee/bee-tile-6.webp)`,
+      ``,
+      `url(assets/images/bee/bee-tile-8.webp)`,
+      `url(assets/images/bee/bee-tile-9.webp)`,
       ];
     break;
     default:
@@ -483,7 +496,8 @@ function checkWin() {
 
 /**
  * Called when the Sneaky peek button is clicked. Click event Listener activated on load.
- * Sneaky Peek modal displayed block and visible. Sneaky Peek image added.
+ * Sneaky Peek modal displayed block and visible. 
+ * Current puzzle number located and associated Sneaky Peek image added.
  * Click event listener added to close symbol with anonymous function to hide modal.
  * Tile click event listeners prevented from activating further code while modal displayed.
  */
@@ -493,9 +507,24 @@ function sneakyPeak() {
   modal.style.display = "block";
   // Prevent tile click event listeners for activating further code
   preventClick = true;
-  // Add image
+  // Locate current puzzle number
+  let completedPuzzleNumbers = sessionStorage.getItem("completedPictures");
+  let currentPuzzle = completedPuzzleNumbers.charAt(completedPuzzleNumbers.length -1);
+  // Locate current sneaky peek image
+  let currentImage = [];
   let image = document.getElementById("sneaky-peek-pic");
-  image.src = "assets/images/Puffin/puffin-sneaky-peek.webp";
+  switch(currentPuzzle) {
+    case "0": currentImage = "assets/images/Puffin/puffin-sneaky-peek.webp";
+    break;
+    case "1": currentImage = "assets/images/bee/bee-sneaky-peek.webp";
+    break;
+    default:
+      console.log("No sneaky peek match for picture number");
+      alert("Sneaky peek picture cannot be found, please contact developer");
+    break;
+  }
+  // Add sneaky peek image to DOM
+  image.src = currentImage;
   // Add click event listener to close symbol that changes display back to none and re-hides modal
   let closeCross = document.getElementById("close-sneaky-peek");
   closeCross.onclick = function() {
