@@ -104,15 +104,15 @@ function setGamePicture(pictureNumber) {
   switch(pictureNumber) {
     case 0: 
       tilePictures = [
-      `url(assets/images/Puffin/puffin-tile-1.webp)`,
-      `url(assets/images/Puffin/puffin-tile-2.webp)`,
-      `url(assets/images/Puffin/puffin-tile-3.webp)`,
-      `url(assets/images/Puffin/puffin-tile-4.webp)`,
-      `url(assets/images/Puffin/puffin-tile-5.webp)`,
-      `url(assets/images/Puffin/puffin-tile-6.webp)`,
+      `url(assets/images/puffin/puffin-tile-1.webp)`,
+      `url(assets/images/puffin/puffin-tile-2.webp)`,
+      `url(assets/images/puffin/puffin-tile-3.webp)`,
+      `url(assets/images/puffin/puffin-tile-4.webp)`,
+      `url(assets/images/puffin/puffin-tile-5.webp)`,
+      `url(assets/images/puffin/puffin-tile-6.webp)`,
       ``,
-      `url(assets/images/Puffin/puffin-tile-8.webp)`,
-      `url(assets/images/Puffin/puffin-tile-9.webp)`,
+      `url(assets/images/puffin/puffin-tile-8.webp)`,
+      `url(assets/images/puffin/puffin-tile-9.webp)`,
       ];
     break;
     case 1:
@@ -514,7 +514,7 @@ function sneakyPeak() {
   let currentImage = [];
   let image = document.getElementById("sneaky-peek-pic");
   switch(currentPuzzle) {
-    case "0": currentImage = "assets/images/Puffin/puffin-sneaky-peek.webp";
+    case "0": currentImage = "assets/images/puffin/puffin-sneaky-peek.webp";
     break;
     case "1": currentImage = "assets/images/bee/bee-sneaky-peek.webp";
     break;
