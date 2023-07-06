@@ -33,10 +33,13 @@
       <!-- This paragraph will be filled with information specific to the subject of the puzzle completed -->
       <div id="information" class="text-container"></div>
 
+      <!-- This paragraph will contain a message once the user has seen all available puzzles -->
+      <p id="all-puzzles-seen" class="text-container"></p>
+
       <!-- Buttons to be positioned together -->
       <nav>
         <!-- <a> tag used for these buttons as they are page links or external links. This is so that semantics are clear, they have then been styled as a button -->
-        <a href="puzzle.html" class="anchor-button" aria-label="Return to the puzzle page to solve a new puzzle">
+        <a href="puzzle.html" id="play-again-button" class="anchor-button" aria-label="Return to the puzzle page to solve a new puzzle">
           Play again
         </a>
         <a 

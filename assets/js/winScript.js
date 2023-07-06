@@ -122,6 +122,21 @@ function checkPuzzlesCompleted(completedPuzzleNumbers) {
   }
 }
 
+/**
+ * Called by checkPuzzlesCompleted
+ * Message loaded to DOM and play again button text changed
+ * Add event listener to the play again button which calls the resetSessionStorage function
+ */
 function allPuzzlesSeen() {
+  let paragraph = document.getElementById("all-puzzles-seen");
+  let message = "You have now seen all the available puzzles. Did you manage to solve them all?"
+  paragraph.innerHTML = message;
+  let button = document.getElementById("play-again-button");
+  let newLabel = "Reset and play again";
+  button.innerHTML = newLabel;
+  button.addEventListener('click', resetSessionStorage);
+}
+
+function resetSessionStorage (){
 
 }
