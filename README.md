@@ -218,7 +218,9 @@ pictureNumber = Math.floor(Math.random() * 1);
 10 - In the loadPuzzlePicture function, create a new case and following the format of previous cases add in the link to your original image.
 11 - In the loadPuzzleName function, create a new case and following the format of previous cases add in the name of your image's subject.
 12 - In the loadPuzzleInformation function, create a new case and following the format of previous cases add in information about the subject of your image.
-13 - All done and ready for testing.
+13 - In the checkPuzzlesCompleted function, adjust the following line of code increaing the number by 1.
+if (completedPuzzleNumbers.length === 2)
+14 - All done and ready for testing.
 
 [Return to contents list](#contents)
 
