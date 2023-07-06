@@ -77,6 +77,37 @@ nav {
   font-size: larger;
 }
 
+#landing-page-images {
+  width: 100%;
+  aspect-ratio: 3/2;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  position: relative;
+}
+
+.landing-image {
+  width: 40%;
+  border: 1px solid black;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 10px 10px 15px grey;
+  position: absolute;
+}
+
+#puffin-landing-image {
+  z-index: 1;
+  top: 5%;
+  left: 10%;
+  transform: rotate(13deg);
+}
+
+#bee-landing-image {
+  z-index: 2;
+  top: 15%;
+  right: 10%;
+  transform: rotate(335deg);
+}
+
 
 /* Styling specefic to the puzzle */
 
@@ -90,6 +121,7 @@ nav {
   display: grid;
   grid-template-columns: [left] 1fr [middle] 1fr [right] 1fr; /* Value of 1fr causes the space to be evenly distributed */
   grid-template-rows: [top] 1fr [center] 1fr [bottom] 1fr;
+  box-shadow: 10px 10px 15px grey;
 }
 
 .grid-box {
@@ -180,6 +212,7 @@ functions: tileSlideDown, tileSlideUp, tileSlideLeft tileSlideRight */
 /* Sneaky Peek modal */
 #sneaky-peek-pic {
   width: 100%;
+  border: 1px solid black;
 }
 
 /* Instructions modal */
@@ -210,4 +243,10 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-/* Styling specific to the win page 
+/* Styling specific to the win page */
+
+#original-picture {
+  box-shadow: 10px 10px 15px grey;
+  border: 1.8px solid black;
+  border-radius: 2px;
+}

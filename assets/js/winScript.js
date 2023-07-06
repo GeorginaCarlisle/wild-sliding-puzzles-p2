@@ -25,10 +25,14 @@ function loadPuzzlePicture(currentPuzzle) {
   let puzzlePicture = ``;
   switch (currentPuzzle) {
     case "0":
-      puzzlePicture = `<img src="assets/images/puffin/puffin-original.webp" alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." class="image">`;
+      puzzlePicture = `<img src="assets/images/puffin/puffin-original.webp" 
+      alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." 
+      class="image">`;
     break;
     case "1":
-      puzzlePicture = `<img src="assets/images/bee/bee-original.webp" alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." class="image">`;
+      puzzlePicture = `<img src="assets/images/bee/bee-original.webp" 
+      alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." 
+      class="image">`;
     break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
