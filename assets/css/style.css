@@ -197,7 +197,7 @@ functions: tileSlideDown, tileSlideUp, tileSlideLeft tileSlideRight */
 .modal {
   display: none; /* The modals will not be displayed until activated by JavaScript */
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   width: 70%;
   max-height: 70%;
   left: 15%;
