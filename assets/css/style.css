@@ -391,6 +391,11 @@ ul {
     margin-bottom: 2rem;  
   }
   
+  /* Win page */
+  #information {
+    font-size: 18px;
+  }
+
   /* Modals */
   .modal {
     width: 450px;
@@ -497,9 +502,6 @@ ul {
   /* Puzzle page */
   #puzzle-grid-container {
     width: 600px;
-  }
-  #puzzle-plus-nav {
-    margin-top: 8rem;
   }
   #puzzle-page-nav {
     margin-top: 6rem;
