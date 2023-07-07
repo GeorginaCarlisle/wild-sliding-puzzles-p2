@@ -417,9 +417,16 @@ ul {
   #landing-page-images {
     margin-top: 1rem;
     aspect-ratio: 9/5;
+    width: 100%;
   }
   #landing-page-nav {
     margin-bottom: 0;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  #image-plus-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   /* Puzzle page */
@@ -472,7 +479,7 @@ ul {
   }
 }
 
-/* Responsive styling for screens larger than width 1000px */
+/* Responsive styling for screens larger than width 1300px */
 @media screen and (min-width:1300px) {
   
   button, .anchor-button {

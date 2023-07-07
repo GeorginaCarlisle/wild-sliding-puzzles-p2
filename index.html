@@ -38,51 +38,52 @@
     </div>
 
     <!-- Container for image to allow for layout and positioning styling -->
-    <div class="image-container" id="landing-page-images">
-      <img 
-        src="assets/images/landing-page-1.webp" 
-        alt="View of the puffin puzzle with the picture all scrambled"
-        class="landing-image" id="puffin-landing-image">
-      <img 
-        src="assets/images/landing-page-2.webp" 
-        alt="View of the bee puzzle with the picture all scrambled"
-        class="landing-image" id="bee-landing-image">
+    <div id="image-plus-nav">
+      <div class="image-container" id="landing-page-images">
+        <img 
+          src="assets/images/landing-page-1.webp" 
+          alt="View of the puffin puzzle with the picture all scrambled"
+          class="landing-image" id="puffin-landing-image">
+        <img 
+          src="assets/images/landing-page-2.webp" 
+          alt="View of the bee puzzle with the picture all scrambled"
+          class="landing-image" id="bee-landing-image">
+      </div>
+ 
+      <!-- Buttons to be positioned together -->
+      <nav id="landing-page-nav">
+        <!-- <a> tag used for buttons that are page links so that semantics are clear, then styled as a button -->
+        <a href="puzzle.html" class="anchor-button">
+          Play   
+        </a>
+    
+        <!-- Trigger to open instructions modal -->
+        <button id="button-instructions">Instructions</button>
+        <!-- Instructions modal -->
+        <div id="modal-instructions" class="modal">
+          <span class="close">&times;</span>
+          <!-- Instructions content -->
+          <div class="modal-content">
+            <h2>Instructions</h2>
+            <ol>
+              <li>Click on a tile to slide it into the empty space</li>
+              <li>Only tiles next to an empty space can be moved</li>
+              <li>Slide the tiles around so that one by one they slot into their correct position (this will take a number of moves)</li>
+              <li>When correctly placed the tiles will form an image</li>
+              <li>Have a go, play around and see if you can find a way to get all the tiles into the correct position</li>
+            </ol>
+            <section id="help-section">
+              <h3>If you are feeling stuck:</h3>
+              <ul>
+                <li>See what the completed puzzle looks like by clicking the <strong>Sneaky Peek</strong> button</li>
+                <li>Or get some tips by clicking the <strong>Tips</strong> button</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </nav>
     </div>
   </main>
-        
-  <!-- Buttons to be positioned together -->
-  <nav id="landing-page-nav">
-    <!-- <a> tag used for buttons that are page links so that semantics are clear, then styled as a button -->
-    <a href="puzzle.html" class="anchor-button">
-      Play   
-    </a>
-    
-    <!-- Trigger to open instructions modal -->
-    <button id="button-instructions">Instructions</button>
-    <!-- Instructions modal -->
-    <div id="modal-instructions" class="modal">
-      <span class="close">&times;</span>
-      <!-- Instructions content -->
-      <div class="modal-content">
-        <h2>Instructions</h2>
-        <ol>
-          <li>Click on a tile to slide it into the empty space</li>
-          <li>Only tiles next to an empty space can be moved</li>
-          <li>Slide the tiles around so that one by one they slot into their correct position (this will take a number of moves)</li>
-          <li>When correctly placed the tiles will form an image</li>
-          <li>Have a go, play around and see if you can find a way to get all the tiles into the correct position</li>
-        </ol>
-        <section id="help-section">
-          <h3>If you are feeling stuck:</h3>
-          <ul>
-            <li>See what the completed puzzle looks like by clicking the <strong>Sneaky Peek</strong> button</li>
-            <li>Or get some tips by clicking the <strong>Tips</strong> button</li>
-          </ul>
-        </section>
-      </div>
-    </div>
-    
-  </nav>
     
   <footer>
     <div id="creator">
@@ -113,6 +114,7 @@
         <i class="fa-solid fa-paw"></i>
       </a>
     </div>
+  </main>
   </footer>
   
   <!-- Link to the JavaScript file -->
