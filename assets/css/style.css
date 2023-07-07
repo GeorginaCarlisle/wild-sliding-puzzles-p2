@@ -350,15 +350,18 @@ ul {
     justify-content: center;
     padding: 0.5rem;
   }
+
+  #landing-page-images {
+    width: 80%;
+  }
+
   #puzzle-grid-container {
     width: 60%;
     margin-right: 20%;
     margin-left: 20%;
     margin-bottom: 4rem;
   }
-  #landing-page-images {
-    width: 80%;
-  }
+  
   .modal {
     width: 350px;
   }
@@ -372,9 +375,14 @@ ul {
   h1 {
     margin-bottom: 4rem;
   }
+  nav {
+    margin-bottom: 2rem;
+  }
   .text-container p {
     margin-top: 2rem;
   }
+
+  /* Landing page */
   #landing-page-images {
     margin-top: 4rem;
   }
@@ -382,9 +390,8 @@ ul {
     width: 60%;
     margin-bottom: 2rem;  
   }
-  nav {
-    margin-bottom: 2rem;
-  }
+  
+  /* Modals */
   .modal {
     width: 450px;
     right: 5%;
@@ -396,6 +403,11 @@ ul {
   h1 {
     margin-bottom: 2rem;
   }
+  main {
+    width: 80%;
+  }
+
+  /* Landing page */
   .text-container p {
     display: inline;
   }
@@ -404,20 +416,21 @@ ul {
   }
   #landing-page-images {
     margin-top: 1rem;
+    aspect-ratio: 9/5;
   }
   #landing-page-nav {
     margin-bottom: 0;
   }
+
+  /* Puzzle page */
   #puzzle-plus-nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 4rem;
   }
   #puzzle-grid-container {
     margin: 0 5rem 0 5rem;
     width: 410px;
-  }
-  main {
-    width: 80%;
   }
   #puzzle-page-nav {
     flex-direction: column;
@@ -425,29 +438,73 @@ ul {
     height: 410px;
     margin: 0 auto;
   }
+
+  /* Modals */
   .modal {
     top: 5%;
   }
   
+  /* Win page */
   #original-picture {
-    width: 50%;
+    width: 450px;
+    height: 450px;
     float: left;
   }
   #container-subject-information {
     width: 45%;
     float: right;
   }
+  #container-subject-information p {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+  }
   #win-nav {
     float: left;
     flex-direction: column;
-    width: 50%;
+    width: 450px;
     align-content: space-around;
   }
   #win-nav a {
     margin: 30px 8px;
   }
-  
   #win-main {
     width: 90%;
+  }
+}
+
+/* Responsive styling for screens larger than width 1000px */
+@media screen and (min-width:1300px) {
+  
+  button, .anchor-button {
+    font-size: 30px;
+    padding: 12px 15px;
+  }
+  
+  /* landing page */
+  .text-container p {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+  }
+  
+  /* Puzzle page */
+  #puzzle-grid-container {
+    width: 600px;
+  }
+  #puzzle-plus-nav {
+    margin-top: 8rem;
+  }
+  #puzzle-page-nav {
+    margin-top: 6rem;
+  }
+
+  /* Win page */
+  #win-main {
+    width: 80%;
+  }
+
+  /* Modals */
+  .modal {
+    font-size: 26px;
   }
 }
