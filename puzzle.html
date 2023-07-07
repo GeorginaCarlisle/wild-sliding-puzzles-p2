@@ -23,103 +23,105 @@
   <main>
     <h1>Wild Sliding Puzzles</h1>
 
-    <!-- Puzzle container with 9 grid boxes -->
-    <div id="puzzle-grid-container">
-      <div class="grid-box" id="tile-1"></div>
-      <div class="grid-box" id="tile-2"></div>
-      <div class="grid-box" id="tile-3"></div>
-      <div class="grid-box" id="tile-4"></div>
-      <div class="grid-box" id="tile-5"></div>
-      <div class="grid-box" id="tile-6"></div>
-      <div class="grid-box" id="tile-7"></div>
-      <div class="grid-box" id="tile-8"></div>
-      <div class="grid-box" id="tile-9"></div>
-    </div>
+    <div id="puzzle-plus-nav">
+      <!-- Puzzle container with 9 grid boxes -->
+      <div id="puzzle-grid-container">
+        <div class="grid-box" id="tile-1"></div>
+        <div class="grid-box" id="tile-2"></div>
+        <div class="grid-box" id="tile-3"></div>
+        <div class="grid-box" id="tile-4"></div>
+        <div class="grid-box" id="tile-5"></div>
+        <div class="grid-box" id="tile-6"></div>
+        <div class="grid-box" id="tile-7"></div>
+        <div class="grid-box" id="tile-8"></div>
+        <div class="grid-box" id="tile-9"></div>
+      </div>
 
-    <nav>
-      <!-- The following modals were created following the steps given in 
-      'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp-->
+      <nav id="puzzle-page-nav">
+        <!-- The following modals were created following the steps given in 
+        'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp-->
       
-      <!-- Trigger to open instructions modal -->
-      <button id="button-instructions" >Instructions</button>
-      <!-- Instructions modal -->
-      <div id="modal-instructions" class="modal">
-        <span id="close-instructions" class="close">&times;</span>
-        <!-- Instructions content -->
-        <div class="modal-content">
-          <h2>Instructions</h2>
-          <ol>
-            <li>Click on a tile to slide it into the empty space</li>
-            <li>Only tiles next to an empty space can be moved</li>
-            <li>Slide the tiles around so that one by one they slot into their correct position (this will take a number of moves)</li>
-            <li>When correctly placed the tiles will form an image</li>
-            <li>Have a go, play around and see if you can find a way to get all the tiles into the correct position</li>
-          </ol>
-          <section id="help-section">
-            <h3>If you are feeling stuck:</h3>
-            <ul>
-              <li>See what the completed puzzle looks like by clicking the <strong>Sneaky Peek</strong> button</li>
-              <li>Or get some tips by clicking the <strong>Tips</strong> button</li>
-            </ul>
-          </section>
+        <!-- Trigger to open instructions modal -->
+        <button id="button-instructions" >Instructions</button>
+        <!-- Instructions modal -->
+        <div id="modal-instructions" class="modal">
+          <span id="close-instructions" class="close">&times;</span>
+          <!-- Instructions content -->
+          <div class="modal-content">
+            <h2>Instructions</h2>
+            <ol>
+              <li>Click on a tile to slide it into the empty space</li>
+              <li>Only tiles next to an empty space can be moved</li>
+              <li>Slide the tiles around so that one by one they slot into their correct position (this will take a number of moves)</li>
+              <li>When correctly placed the tiles will form an image</li>
+              <li>Have a go, play around and see if you can find a way to get all the tiles into the correct position</li>
+            </ol>
+            <section id="help-section">
+              <h3>If you are feeling stuck:</h3>
+              <ul>
+                <li>See what the completed puzzle looks like by clicking the <strong>Sneaky Peek</strong> button</li>
+                <li>Or get some tips by clicking the <strong>Tips</strong> button</li>
+              </ul>
+            </section>
+          </div>
         </div>
-      </div>
 
-      <!-- Trigger to open Sneaky Peek modal -->
-      <button id="button-sneaky-peek">Sneaky Peek</button>
-      <!-- Sneaky Peek modal -->
-      <div id="modal-sneaky-peek" class="modal">
-        <span id="close-sneaky-peek" class="close">&times;</span>
-        <!-- Sneaky Peek content -->
-        <div class="modal-content">
-          <h2>Sneaky Peek</h2>
-          <img src="" alt="" id="sneaky-peek-pic">
+        <!-- Trigger to open Sneaky Peek modal -->
+        <button id="button-sneaky-peek">Sneaky Peek</button>
+        <!-- Sneaky Peek modal -->
+        <div id="modal-sneaky-peek" class="modal">
+          <span id="close-sneaky-peek" class="close">&times;</span>
+          <!-- Sneaky Peek content -->
+          <div class="modal-content">
+            <h2>Sneaky Peek</h2>
+            <img src="" alt="" id="sneaky-peek-pic">
+          </div>
         </div>
-      </div>
 
-      <!-- Trigger to open tips modal -->
-      <button id="button-tips">Tips</button>
-      <!-- Tips modal -->
-      <div id="modal-tips" class="modal">
-        <span id="close-tips" class="close">&times;</span>
-        <!-- Tips content -->
-        <div class="modal-content">
-          <h2>Tips</h2>
-          <ol>
-            <li><strong>First work on getting the top row in place</strong></li>
-            <li>Determine the 3 tiles that will sit together at the top. Use the sneaky peek if you need to</li>
-            <li>Get the 3 tiles in the right order. They do not need to be at the top yet
-              <img src="assets/images/tips-images/build-a-row-1.png" 
-                alt="Image showing three tiles lined up in the correct order with arrows showing how they will then snake into position"
-                class="tips-image">
-            </li>
-            <li>Snake the tiles into position, following one after the other
-              <img src="assets/images/tips-images/build-a-row-2.png" 
-                alt="Image showing the top three tiles in the correct position"
-                class="tips-image">
-            </li>
-            <li><strong>Now you can work on the rest of the tiles</strong></li>
-            <li>Once again start by figuring out where the tiles need to go</li>
-            <li>Then get the tiles in the right order
-              <img src="assets/images/tips-images/complete-1.png" 
-                alt="Image showing the top three tiles in position and the others lined up in the correct order with arrows showing how they will then snake into position"
-                class="tips-image">
-            </li>
-            <li>Snake them round into the correct position
-              <img src="assets/images/tips-images/complete-2.png" 
-                alt="Image showing all the tiles in the correct position"
-                class="tips-image">
-            </li>
-            <li>And... Hey Presto! You have a completed puzzle</li>
-          </ol>
+        <!-- Trigger to open tips modal -->
+        <button id="button-tips">Tips</button>
+        <!-- Tips modal -->
+        <div id="modal-tips" class="modal">
+          <span id="close-tips" class="close">&times;</span>
+          <!-- Tips content -->
+          <div class="modal-content">
+            <h2>Tips</h2>
+            <ol>
+              <li><strong>First work on getting the top row in place</strong></li>
+              <li>Determine the 3 tiles that will sit together at the top. Use the sneaky peek if you need to</li>
+              <li>Get the 3 tiles in the right order. They do not need to be at the top yet
+                <img src="assets/images/tips-images/build-a-row-1.png" 
+                  alt="Image showing three tiles lined up in the correct order with arrows showing how they will then snake into position"
+                  class="tips-image">
+              </li>
+              <li>Snake the tiles into position, following one after the other
+                <img src="assets/images/tips-images/build-a-row-2.png" 
+                  alt="Image showing the top three tiles in the correct position"
+                  class="tips-image">
+              </li>
+              <li><strong>Now you can work on the rest of the tiles</strong></li>
+              <li>Once again start by figuring out where the tiles need to go</li>
+              <li>Then get the tiles in the right order
+                <img src="assets/images/tips-images/complete-1.png" 
+                  alt="Image showing the top three tiles in position and the others lined up in the correct order with arrows showing how they will then snake into position"
+                  class="tips-image">
+              </li>
+              <li>Snake them round into the correct position
+                <img src="assets/images/tips-images/complete-2.png" 
+                  alt="Image showing all the tiles in the correct position"
+                  class="tips-image">
+              </li>
+              <li>And... Hey Presto! You have a completed puzzle</li>
+            </ol>
+          </div>
         </div>
-      </div>
 
-      <!-- <a> tag used for buttons that are page links so that semantics are clear, then styled as a button -->
-      <a href="puzzle.html" class="anchor-button">
-        Change puzzle  
-      </a>
-    </nav>
+        <!-- <a> tag used for buttons that are page links so that semantics are clear, then styled as a button -->
+        <a href="puzzle.html" class="anchor-button">
+          Change puzzle  
+        </a>
+      </nav>
+    </div>
   </main>
 
   <footer>

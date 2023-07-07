@@ -20,45 +20,42 @@
 
 </head>
 <body>
-  <main>
+  <main id="win-main">
     <h1>Wild Sliding Puzzles</h1>
-  
-    <!-- This div will be filled with the original picture from the puzzle completed -->
-    <div id="original-picture" class="image-container"></div>
+    <div id="picture-plus-info">
+      <!-- This div will be filled with the original picture from the puzzle completed -->
+      <div id="original-picture" class="image-container"></div>
 
-    <h2>
-      Congratulations! You have found a 
-      <!-- This span will be filled with the name of picture's subject -->
-      <span id="subject"></span>
-    </h2>
+      <!-- Container to allow the heading and paragraph information to be positioned together -->
+      <div id="container-subject-information">
+        <h2>
+          Congratulations! You have found a 
+          <!-- This span will be filled with the name of picture's subject -->
+          <span id="subject"></span>
+        </h2>
 
-    <!-- Container to allow the paragraph information and buttons to be positioned together -->
-    <div id="container-subject-information">
+        <!-- This paragraph will be filled with information specific to the subject of the puzzle completed -->
+        <div id="information" class="text-container"></div>
 
-      <!-- This paragraph will be filled with information specific to the subject of the puzzle completed -->
-      <div id="information" class="text-container"></div>
-
-      <!-- This paragraph will contain a message once the user has seen all available puzzles -->
-      <p id="all-puzzles-seen" class="text-container"></p>
-
-      <!-- Buttons to be positioned together -->
-      <nav>
-        <!-- <a> tag used for these buttons as they are page links or external links. This is so that semantics are clear, they have then been styled as a button -->
-        <a href="puzzle.html" id="play-again-button" class="anchor-button" aria-label="Return to the puzzle page to solve a new puzzle">
-          Play again
-        </a>
-        <a 
-          href="https://www.saveourwildisles.org.uk" 
-          class="anchor-button" 
-          target="_blank" 
-          rel="noopener" 
-          aria-label="Visit Save Our Wild Isles to learn more (opens in a new tab)">
-          Learn more about our Wild Isles
-        </a>
-      </nav>
-
+        <!-- This paragraph will contain a message once the user has seen all available puzzles -->
+        <p id="all-puzzles-seen" class="text-container"></p>
+      </div>
     </div>
-  
+    
+    <nav id="win-nav">
+      <!-- <a> tag used for these buttons as they are page links or external links. This is so that semantics are clear, they have then been styled as a button -->
+      <a href="puzzle.html" id="play-again-button" class="anchor-button" aria-label="Return to the puzzle page to solve a new puzzle">
+        Play again
+      </a>
+      <a 
+        href="https://www.saveourwildisles.org.uk" 
+        class="anchor-button" 
+        target="_blank" 
+        rel="noopener" 
+        aria-label="Visit Save Our Wild Isles to learn more (opens in a new tab)">
+        Learn more about our Wild Isles
+      </a>
+    </nav>
   </main>
     
   <footer>

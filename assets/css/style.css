@@ -390,3 +390,64 @@ ul {
     right: 5%;
   }
 }
+
+/* Responsive styling for screens larger than width 1000px */
+@media screen and (min-width:1000px) {
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .text-container p {
+    display: inline;
+  }
+  #key-word-paragraph {
+    margin-bottom: 1rem;
+  }
+  #landing-page-images {
+    margin-top: 1rem;
+  }
+  #landing-page-nav {
+    margin-bottom: 0;
+  }
+  #puzzle-plus-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  #puzzle-grid-container {
+    margin: 0 5rem 0 5rem;
+    width: 410px;
+  }
+  main {
+    width: 80%;
+  }
+  #puzzle-page-nav {
+    flex-direction: column;
+    align-content: space-around;
+    height: 410px;
+    margin: 0 auto;
+  }
+  .modal {
+    top: 5%;
+  }
+  
+  #original-picture {
+    width: 50%;
+    float: left;
+  }
+  #container-subject-information {
+    width: 45%;
+    float: right;
+  }
+  #win-nav {
+    float: left;
+    flex-direction: column;
+    width: 50%;
+    align-content: space-around;
+  }
+  #win-nav a {
+    margin: 30px 8px;
+  }
+  
+  #win-main {
+    width: 90%;
+  }
+}
