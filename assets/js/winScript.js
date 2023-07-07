@@ -25,7 +25,7 @@ function loadPuzzlePicture(currentPuzzle) {
   let puzzlePicture = ``;
   switch (currentPuzzle) {
     case "0":
-      puzzlePicture = `<img src="assets/images/puffin/puffin-original.webp" 
+      puzzlePicture = `<img src="assets/images/puffin-images/puffin-original.webp" 
       alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." 
       class="image">`;
     break;
