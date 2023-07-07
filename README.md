@@ -209,6 +209,18 @@ All text unless specified is black #000000
 
 Please go to testing.md to see colour contrast checks.
 
+#### Typography
+
+![Image showing the heading text 'Wild Sliding Tiles' in the Kaushan Script font](documentation/heading-font.webp)
+
+The font [Kaushan Script by Impallari Type](https://fonts.google.com/specimen/Kaushan+Script?preview.size=22&query=Kaushan+Script) has been used for the main heading. This was chosen as I thought it stood out well and looked a little on the wild side!
+
+![Image showing landing page text in the Lato font](documentation/text-font.webp)
+
+The font [Lato by Lukasz Dziedzic](https://fonts.google.com/specimen/Lato?preview.size=22&query=%C5%81ukasz+Dziedzic&category=Sans+Serif) has been been used for all other text. It is a sans-serif font and has been chosen to aid readability as well as working well with Kaushan Script and being visually appealing.
+
+
+
 [Return to contents list](#contents)
 
 ## Testing and Validation
@@ -261,6 +273,11 @@ if (completedPuzzleNumbers.length === 2)
 
 ### Code
 - **HTML, CSS and JavaScript code used to create modals**: I followed the steps given in the article [How To - CSS/JS Modal by W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) to create the modals used within this project, adjusting the code to meet my requirements.
+
+### Fonts
+- **Kaushan Script**: Created by Impallari and downloaded from [Google Fonts](https://fonts.google.com/specimen/Kaushan+Script?preview.size=22&query=Kaushan+Script). Used for the main heading.
+- **Lato**: Created by Lukasz Dziedzic and downloaded from [Google Fonts](https://fonts.google.com/specimen/Lato?preview.size=22&query=%C5%81ukasz+Dziedzic&category=Sans+Serif). Main font used throughout. 
+
 
 [Return to contents list](#contents)
 
