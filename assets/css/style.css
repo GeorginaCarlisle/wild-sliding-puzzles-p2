@@ -96,8 +96,8 @@ footer {
 }
 
 #wild-isles {
-  margin-left: 2rem;
   float: right;
+  margin-left: 2rem;
 }
 
 #wild-isles > p {
@@ -323,4 +323,26 @@ ul {
 
 #container-subject-information p {
   margin-bottom: 1.8rem;
+}
+
+/* Responsive styling for screens larger than width 500px */
+@media screen and (min-width:500px) {
+  footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* Responsive styling for screens larger than width 500px */
+@media screen and (min-width:580px) {
+  /* Add back in the extra footer text */
+  .extra-info {
+    display: inline;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+  }
 }
