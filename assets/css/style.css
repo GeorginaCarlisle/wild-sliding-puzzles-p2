@@ -28,6 +28,12 @@ button, .anchor-button {
   font-size: larger;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover, .anchor-button:hover {
+  background-color: #ffffff;
+  color: #c43329;
 }
 
 /* Footer specific styling */
