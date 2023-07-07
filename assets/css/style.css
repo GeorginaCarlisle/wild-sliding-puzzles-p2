@@ -316,3 +316,12 @@ ul {
   border: 1.8px solid black;
   border-radius: 2px;
 }
+
+#container-subject-information {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#container-subject-information p {
+  margin-bottom: 1.8rem;
+}
