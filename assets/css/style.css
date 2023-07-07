@@ -465,10 +465,11 @@ ul {
   #container-subject-information {
     width: 45%;
     float: right;
+    margin-bottom: 0;
   }
   #container-subject-information p {
     display: inline-block;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0;
   }
   #win-nav {
     float: left;
