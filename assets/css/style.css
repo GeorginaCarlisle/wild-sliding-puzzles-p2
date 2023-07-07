@@ -5,6 +5,7 @@ body {
   display: flex; /* Main and footer will be positioned by flex */
   flex-direction: column; /* Main and footer will be positioned in a column */
   background-color: #eaeaf1;
+  font-family: 'Lato', sans-serif;
 }
 
 main {
@@ -15,6 +16,7 @@ main {
 
 h1 {
   color: #2c318e;
+  font-family: 'Kaushan Script', cursive;
 }
 
 h2 {
@@ -23,7 +25,6 @@ h2 {
 
 h1, h2 {
   text-align: center;
-  
 }
 
 .image-container {
