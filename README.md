@@ -184,6 +184,31 @@ The following wireframes show the instructions pop-up when activated from the pu
 
 ### The Surface Plane
 
+#### Colour Scheme
+
+Inspiration for the colour scheme came from the colours in the Puffin puzzle picture, with colours then being used to provide contrast to increase user experience by aiding readability and navigation.
+
+Main colour scheme:
+**A**: Page background colour
+**B**: Main heading
+**C**: Key words on the landing page and button background (text on buttons is white #FFFFFF)
+**D**: Footer background colour
+**E**: Footer anchor link icons (slightly different to the main heading colour in order to increase contrast to the footer background)
+All text unless specified is black #000000
+
+![Table showing the colours used as part of the main colour scheme](documentation/colour-scheme/main-colour-scheme.webp)
+
+Modal colour scheme:
+**A**: Page background colour (included for reference)
+**B**: Modal background colour
+**C**: Heading
+**D**: Subheading
+All text unless specified is black #000000
+
+![Table showing the colours used as part of the modal colour scheme](documentation/colour-scheme/modal-colour-scheme.webp)
+
+Please go to testing.md to see colour contrast checks.
+
 [Return to contents list](#contents)
 
 ## Testing and Validation
