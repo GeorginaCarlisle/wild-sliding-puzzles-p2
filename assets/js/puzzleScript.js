@@ -151,22 +151,48 @@ function setGamePicture(pictureNumber) {
 
 /**
  * Called by setGamePicture
+ * Randomly choses a scramble setting
  * Places each tile in a different grid position as per scrambleSetting
  * ScrambleSetting has been tested to ensure the puzzle is solvable
  */
 function scrambleGamePicture() {
+  // Generate a random number, range of random numbers generated reflects the number of scramble settings available
+  let scrambleNumber = Math.floor(Math.random() * 2);
+  console.log("scramble setting chosen is " + scrambleNumber);
   // Array items specify a grid area (grid-row-start/grid-column-start/grid-row-end/column-row-end) 
-  let scrambleSetting = [
-    "2/1/3/2",
-    "3/2/4/3",
-    "1/2/2/3",
-    "3/3/4/4",
-    "2/2/3/3",
-    "1/3/2/4",
-    "3/1/4/2",
-    "1/1/2/2",
-    "2/3/3/4"
-  ]
+  let scrambleSetting = [];
+  switch(scrambleNumber) {
+    case 0: 
+      scrambleSetting = [
+        "2/1/3/2",
+        "3/2/4/3",
+        "1/2/2/3",
+        "3/3/4/4",
+        "2/2/3/3",
+        "1/3/2/4",
+        "3/1/4/2",
+        "1/1/2/2",
+        "2/3/3/4"
+      ];
+    break;
+    case 1: 
+      scrambleSetting = [
+        "3/3/4/4",
+        "1/3/2/4",
+        "2/3/3/4",
+        "1/2/2/3",
+        "2/1/3/2",
+        "3/2/4/3",
+        "3/1/4/2",
+        "2/2/3/3",
+        "1/1/2/2"
+      ];
+    break;
+    default:
+      console.log("No match for scramble setting");
+      alert("scramble setting cannot be found, please contact developer");
+    break;
+  }
   // loop to give each tile in turn it's scrambled grid-area value
   for (let i = 0; i < 9; i++) {
     let tile = document.getElementById('tile-' + (i+1));
