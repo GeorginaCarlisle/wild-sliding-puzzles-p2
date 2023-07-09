@@ -310,6 +310,8 @@ ul {
   box-shadow: 10px 10px 15px grey;
   border: 1.8px solid black;
   border-radius: 2px;
+  width: 230px;
+  height: 230px;
 }
 
 #container-subject-information {
@@ -331,6 +333,10 @@ ul {
     font-size: 1.5em;
     width: 90%;
     margin: 0 auto;
+  }
+  #original-picture {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -360,10 +366,6 @@ ul {
   
   .modal {
     width: 350px;
-  }
-
-  #original-picture {
-    width: 420px;
   }
 }
 
@@ -397,6 +399,7 @@ ul {
   }
   #original-picture {
     width: 450px;
+    height: 450px;
   }
 
   /* Modals */
@@ -461,8 +464,6 @@ ul {
   
   /* Win page */
   #original-picture {
-    width: 450px;
-    height: 450px;
     float: left;
   }
   #container-subject-information {

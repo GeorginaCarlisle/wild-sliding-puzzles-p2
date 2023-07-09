@@ -231,6 +231,21 @@ See [TESTING.md](TESTING.md) for all testing and validation
 
 ## Bugs and fixes
 
+The original picture div used on the win page wasn't maintaining an aspect ratio of 1/1 leaving a white gap at the bottom of the container below the image.
+![Screen shot of the original picture on the win page](documentation/bug-original-image-win.png)
+
+CSS associated with the div (the image was set a width of 100% and an original aspect ratio of 1/1)
+![Screen shot of associated CSS](documentation/bug-original-image-css.png)
+
+An example of box model once all css rules applied
+![Screen shot of an example box model](documentation/bug-original-image-box-model.png)
+
+I tried the following ways to fix this bug, none of these worked:
+- aspect-ratio
+- object-fit
+
+In the end I resolved the bug by giving the div a fixed width and height, which I then increase using media queries for bigger screens.
+
 [Return to contents list](#contents)
 
 ## Deployment
