@@ -282,16 +282,22 @@ if (completedPuzzleNumbers.length === 2)
 
 ## Tools and Technologies
 
+[Favicon.cc](https://www.favicon.cc/) - Used to create the favicon.
+
 [Return to contents list](#contents)
 
 ## Credits
 
 ### Code
 - **HTML, CSS and JavaScript code used to create modals**: I followed the steps given in the article [How To - CSS/JS Modal by W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) to create the modals used within this project, adjusting the code to meet my requirements.
+- **Link code for favicon** Code copied from [Favicon.cc](https://www.favicon.cc/) I then added in the file path for the image.
 
 ### Fonts
 - **Kaushan Script**: Created by Impallari and downloaded from [Google Fonts](https://fonts.google.com/specimen/Kaushan+Script?preview.size=22&query=Kaushan+Script). Used for the main heading.
 - **Lato**: Created by Lukasz Dziedzic and downloaded from [Google Fonts](https://fonts.google.com/specimen/Lato?preview.size=22&query=%C5%81ukasz+Dziedzic&category=Sans+Serif). Main font used throughout. 
+
+### Images
+- **Favicon image**: Created using [Favicon.cc](https://www.favicon.cc/)
 
 
 [Return to contents list](#contents)
