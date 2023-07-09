@@ -25,6 +25,11 @@ Developer: Georgina Carlisle
 ### HTML Validation
 
 #### Index.html
+##### Initial error
+
+![Image showing validation error for index.html](documentation/code-validation/index.html-validation-error.png)
+
+I fixed this error by removing the offending / from the favicon link in all HTML pages
 
 #### Puzzle.html
 
