@@ -24,6 +24,18 @@ Developer: Georgina Carlisle
 
 ### HTML Validation
 
+#### Index.html
+
+#### Puzzle.html
+
+##### Initial error
+
+![Image showing validation error for puzzle.html](documentation/code-validation/puzzle.html-validation-error.png)
+
+I fixed this error by removing the image element from the HTML document and instead creating an empty div into which the puzzleScript.js now inserts the full image element instead of just updating the src.
+
+#### Win.html
+
 [Return to contents list](#contents)
 
 ### CSS Validation
