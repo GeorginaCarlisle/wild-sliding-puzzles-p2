@@ -138,6 +138,44 @@ Steps taken to improve performance:
 
 ![Wave report for win page](documentation/wave-testing/win-page-wave-testing.png)
 
+#### Contrast checker
+
+Normal text on page background
+
+![Normal text on page background](documentation/colour-scheme/maintext-mainpage.webp)
+
+Heading text on page background
+
+![Heading text on page background](documentation/colour-scheme/heading-mainpage.webp)
+
+Sub-heading text on page background
+
+![Sub-heading text on page background](documentation/colour-scheme/sub-heading-mainpage.webp)
+
+Button text on button background
+
+![Button text on button background](documentation/colour-scheme/button-normal.webp)
+
+Hover button text on button background
+
+![Hover button text on button background](documentation/colour-scheme/button-hover.webp)
+
+Text on footer background
+
+![Text on footer background](documentation/colour-scheme/maintext%20-%20footer.webp)
+
+Link Icon on footer background
+
+![Link Icon on footer background](documentation/colour-scheme/anchor-icons-footer.webp)
+
+Normal text on modal background
+
+![Normal text on modal background](documentation/colour-scheme/maintext-modal.webp)
+
+Heading text on modal background
+
+![Heading text on modal background](documentation/colour-scheme/heading-modal.webp)
+
 [Return to contents list](#contents)
 
 ## Browser Testing
