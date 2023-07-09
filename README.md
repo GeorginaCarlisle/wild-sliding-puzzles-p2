@@ -225,7 +225,7 @@ The font [Lato by Lukasz Dziedzic](https://fonts.google.com/specimen/Lato?previe
 
 ## Testing and Validation
 
-Link to testing.md
+See [TESTING.md](TESTING.md) for all testing and validation
 
 [Return to contents list](#contents)
 
