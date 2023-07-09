@@ -25,7 +25,7 @@ window.onload = function() {
  */
 function chooseGamePicture() {
   // Generate a random number, range of random numbers generated reflects the number of puzzle pictures available
-  let pictureNumber = Math.floor(Math.random() * 2);
+  let pictureNumber = Math.floor(Math.random() * 3);
   console.log("picture number chosen is " + pictureNumber);
   // link to session storage
   let previousPictureNumbers = sessionStorage.getItem("completedPictures");
@@ -53,7 +53,7 @@ function chooseGamePicture() {
         console.log("loop number: " + loop);
         loop++;
         // generate a new random number
-        pictureNumber = Math.floor(Math.random() * 2);
+        pictureNumber = Math.floor(Math.random() * 3);
         console.log("New picture number is: " + pictureNumber);
         // checks for a match
         positionOfMatch = previousPictureNumbers.search(pictureNumber);
@@ -123,6 +123,19 @@ function setGamePicture(pictureNumber) {
       ``,
       `url(assets/images/bee/bee-tile-8.webp)`,
       `url(assets/images/bee/bee-tile-9.webp)`,
+      ];
+    break;
+    case 2:
+      tilePictures = [
+      `url(assets/images/oak/ancient-oak-tile-1.webp)`,
+      `url(assets/images/oak/ancient-oak-tile-2.webp)`,
+      `url(assets/images/oak/ancient-oak-tile-3.webp)`,
+      `url(assets/images/oak/ancient-oak-tile-4.webp)`,
+      `url(assets/images/oak/ancient-oak-tile-5.webp)`,
+      `url(assets/images/oak/ancient-oak-tile-6.webp)`,
+      ``,
+      `url(assets/images/oak/ancient-oak-tile-8.webp)`,
+      `url(assets/images/oak/ancient-oak-tile-9.webp)`,
       ];
     break;
     default:
@@ -540,6 +553,11 @@ function sneakyPeak() {
     case "1": 
       currentImage = `<img src="assets/images/bee/bee-sneaky-peek.webp" 
       alt="The completed puzzle picture, showing a Bee, with all the tiles in the correct position" 
+      id="sneaky-peek-pic">`;
+    break;
+    case "2": 
+      currentImage = `<img src="assets/images/oak/ancient-oak-sneaky-peek.webp" 
+      alt="The completed puzzle picture, showing an ancient oak, with all the tiles in the correct position" 
       id="sneaky-peek-pic">`;
     break;
     default:

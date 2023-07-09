@@ -34,6 +34,11 @@ function loadPuzzlePicture(currentPuzzle) {
       alt="Image of a Puffin with a catch of fish in it's mouth. Image shows Puffin's head and brightly coloured orange beak." 
       class="image">`;
     break;
+    case "2":
+      puzzlePicture = `<img src="assets/images/oak/ancient-oak-original.webp" 
+      alt="Image of an ancient oak tree with the sun shining through it's branches." 
+      class="image">`;
+    break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
   }
@@ -54,6 +59,9 @@ function loadPuzzleName(currentPuzzle) {
     break;
     case "1":
       puzzleName = "Bee";
+    break;
+    case "2":
+      puzzleName = "Ancient Oak";
     break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
@@ -107,6 +115,22 @@ function loadPuzzleInformation(currentPuzzle) {
       <p>Bees are critical for nature and our own survival. If we’re going to bring our world back to life, bees are a 
       good place to start.</p>`;
     break;
+    case "2":
+      puzzleInformation = `
+      <p>Our ancient oak trees – some, hundreds of years old – are cornerstones of our woodland communities. They support 
+      a jaw-dropping number of life forms and are a precious weapon in our fight against climate change. For these 
+      reasons and more, we must protect and restore our ancient woodland.</P>
+      <p>Over thousands of years, our ancient oak trees have evolved together with a range of species to create unique and 
+      complex communities of fungi, plants, insects and micro-organisms that live within an oak’s habitat.</p>
+      <p>Incredibly, they can support more than 2,300 other species including birds, bats and insects – more than any 
+      other native tree. Likewise, oak-dominated ancient forests are home to more of our threatened species than any other 
+      type of woodland.</p>
+      <p>They’re important for our climate too. Woodlands made up of trees of different species and ages act as giant 
+      carbon sponges, and new research even suggests that old trees capture more carbon because of their dense structure. 
+      Our ancient oaks are irreplaceable. The nature they support, the carbon they capture and the cultural value they have 
+      cannot be replicated.</p> 
+      `;
+    break;
     default: alert("puzzle completed not recoginsed, please contact developer");
     break;
   }
@@ -120,7 +144,7 @@ function loadPuzzleInformation(currentPuzzle) {
  * Call allPuzzlesSeen if true
  */
 function checkPuzzlesCompleted(completedPuzzleNumbers) {
-  if (completedPuzzleNumbers.length === 2) {
+  if (completedPuzzleNumbers.length === 3) {
     allPuzzlesSeen();
     console.log("all puzzles seen");
   }
