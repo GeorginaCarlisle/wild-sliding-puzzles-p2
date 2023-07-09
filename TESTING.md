@@ -68,6 +68,28 @@ I fixed these errors by inserting the missing semicolons in lines 63 and 136
 
 ## Performance
 
+### Initial performance measures
+
+Performance scores for win.html on desktop and all pages on mobile were initially quite low
+
+#### Index.html on mobile
+![Initial lighthouse score on mobile for index.html](documentation/lighthouse/index.html-mobile-initial-lighthouse.png)
+
+Steps taken to improve performance:
+- Reduce image size of landing-page-1.webp and landing-page-2.webp
+
+#### Puzzle.html on mobile
+![Initial lighthouse score on mobile for puzzle.html](documentation/lighthouse/puzzle.html-mobile-initial-lighthouse.png)
+
+#### Win.html on desktop and mobile
+Desktop:
+![Initial lighthouse score on desktop for win.html](documentation/lighthouse/win.html-desktop-initial-lighthouse.png)
+Mobile:
+![Initial lighthouse score on mobile for win.html](documentation/lighthouse/win.html-mobile-initial-lighthouse.png)
+
+Steps taken to improve performance:
+- Reduce image size of all original pictures
+
 [Return to contents list](#contents)
 
 ## Accessibility Testing
