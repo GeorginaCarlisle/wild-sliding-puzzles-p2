@@ -95,6 +95,30 @@ I fixed these errors by inserting the missing semicolons in lines 63 and 136
 
 ## Performance
 
+### Performance for the landing page
+
+On dektop:
+![Lighthouse score on desktop for index.html](documentation/lighthouse/index.html-desktop-lighthouse.png)
+
+On mobile:
+![Lighthouse score on mobile for index.html](documentation/lighthouse/index.html-mobile-lighthouse.png)
+
+### Performance for the puzzle page
+
+On dektop:
+![Lighthouse score on desktop for puzzle.html](documentation/lighthouse/puzzle.html-desktop-lighthouse.png)
+
+On mobile:
+![Lighthouse score on mobile for puzzle.html](documentation/lighthouse/puzzle.html-mobile-lighthouse.png)
+
+### Performance for the win page
+
+On dektop:
+![Lighthouse score on desktop for win.html](documentation/lighthouse/win.html-desktop-lighthouse.png)
+
+On mobile:
+![Lighthouse score on mobile for win.html](documentation/lighthouse/win.html-mobile-lighthouse.png)
+
 ### Initial performance measures
 
 Performance scores for win.html on desktop and all pages on mobile were initially quite low
