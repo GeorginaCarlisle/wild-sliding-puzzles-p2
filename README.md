@@ -257,21 +257,34 @@ In the end I resolved the bug by giving the div a fixed width and height, which 
 Follow these steps to add an additional puzzle image:
 
 1 - Resize the image you want to use to 750px x 750px. Save your original image to the repo.
+
 2 - Split the image into 9 equal tiles each 250px x 250px. Save your tile images to the repo.
+
 3 - The following steps are in the puzzleScript.
+
 4 - In the chooseGamePicture function, adjust the following lines of code. Increasing the number multiplying by, by 1. 
 let pictureNumber = Math.floor(Math.random() * 1);
 pictureNumber = Math.floor(Math.random() * 1);
+
 5 - In the setGamePicture function, create a new case (this should be numbered one more than the last case).
+
 6 - Following the format of previous cases add in the links to your tiles. Make sure to leave the seventh slot as an empty temporal literal. Choosing a different tile space to be empty could result in insolvable puzzles.
+
 7 - Disable the checkWin function. Load the page and solve the puzzle to take a screenshot of the completed puzzle. Save your sneaky peak image to the repo and re-enable checkWin.
+
 8 - In the sneakyPeek function, create a new case and following the format of previous cases add in the link to your sneaky peek image.
+
 9 - The remaining steps are in the winScript
+
 10 - In the loadPuzzlePicture function, create a new case and following the format of previous cases add in the link to your original image.
+
 11 - In the loadPuzzleName function, create a new case and following the format of previous cases add in the name of your image's subject.
+
 12 - In the loadPuzzleInformation function, create a new case and following the format of previous cases add in information about the subject of your image.
+
 13 - In the checkPuzzlesCompleted function, adjust the following line of code increaing the number by 1.
 if (completedPuzzleNumbers.length === 2)
+
 14 - All done and ready for testing.
 
 [Return to contents list](#contents)
