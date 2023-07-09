@@ -292,6 +292,10 @@ if (completedPuzzleNumbers.length === 2)
 
 ## Languages
 
+- HTML
+- CSS
+- JavaScript
+
 [Return to contents list](#contents)
 
 ## Tools and Technologies
