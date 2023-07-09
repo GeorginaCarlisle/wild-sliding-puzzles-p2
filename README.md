@@ -325,16 +325,23 @@ if (completedPuzzleNumbers.length === 2)
 
 ### Code
 - **HTML, CSS and JavaScript code used to create modals**: I followed the steps given in the article [How To - CSS/JS Modal by W3 Schools](https://www.w3schools.com/howto/howto_css_modals.asp) to create the modals used within this project, adjusting the code to meet my requirements.
-- **Link code for favicon** Code copied from [Favicon.cc](https://www.favicon.cc/) I then added in the file path for the image.
+- **Link code for favicon**: Code copied from [Favicon.cc](https://www.favicon.cc/) I then added in the file path for the image.
+- **Link code and incode references for Font Awesome icons**: Code copied from [Font Awesome](https://fontawesome.com/) 
 
 ### Fonts
 - **Kaushan Script**: Created by Impallari and downloaded from [Google Fonts](https://fonts.google.com/specimen/Kaushan+Script?preview.size=22&query=Kaushan+Script). Used for the main heading.
 - **Lato**: Created by Lukasz Dziedzic and downloaded from [Google Fonts](https://fonts.google.com/specimen/Lato?preview.size=22&query=%C5%81ukasz+Dziedzic&category=Sans+Serif). Main font used throughout. 
 
 ### Images
+- **Original images of the Puffin, Bee and Ancient Oak**: from [Save our Wild Isles](https://www.saveourwildisles.org.uk/). All other images used on the site were created from these 3 original images.
+- **Font awesome icons** used in the footer: by [Font Awesome](https://fontawesome.com/)
 - **Favicon image**: Created using [Favicon.cc](https://www.favicon.cc/)
 - **Responsive site image**: Created through the website [Am I responsive](https://ui.dev/amiresponsive)
 
+### Text
+- **Key words** on the landing page: from [BBC-Wild Isles](https://www.bbc.co.uk/programmes/p0f0t5dp)
+- **First intro paragraph** on the landing page: from [Save our Wild Isles](https://www.saveourwildisles.org.uk/)
+- **Information text** on the win page: from [Save our Wild Isles](https://www.saveourwildisles.org.uk/)
 
 [Return to contents list](#contents)
 
