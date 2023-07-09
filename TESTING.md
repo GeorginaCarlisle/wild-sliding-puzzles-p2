@@ -180,6 +180,20 @@ Heading text on modal background
 
 ## Browser Testing
 
+The site has been extensively tested in a chrome browser
+![Screenshot of the puzzle page in a chrome browser](documentation/browser-testing/browser-testing-safari.png)
+
+It has also been fully tested in:
+
+Safari
+![Screenshot of the puzzle page in a safari browser](documentation/browser-testing/browser-testing-safari.png)
+
+Firefox
+![Screenshot of the puzzle page in a firefox browser](documentation/browser-testing/browser-testing-firefox.jpg)
+
+Edge
+![Screenshot of the puzzle page in an edge browser](documentation/browser-testing/browser-testing-edge.jpg)
+
 [Return to contents list](#contents)
 
 ## Reponsive Testing
