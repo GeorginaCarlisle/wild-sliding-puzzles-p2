@@ -528,13 +528,19 @@ function sneakyPeak() {
   // Locate current puzzle number
   let completedPuzzleNumbers = sessionStorage.getItem("completedPictures");
   let currentPuzzle = completedPuzzleNumbers.charAt(completedPuzzleNumbers.length -1);
-  // Locate current sneaky peek image
+  // Locate current sneaky peek image and associated alt text
   let currentImage = [];
-  let image = document.getElementById("sneaky-peek-pic");
+  let imageContainer = document.getElementById("container-sneaky-peek-pic");
   switch(currentPuzzle) {
-    case "0": currentImage = "assets/images/puffin-images/puffin-sneaky-peek.webp";
+    case "0": 
+      currentImage = `<img src="assets/images/puffin-images/puffin-sneaky-peek.webp" 
+      alt="The completed puzzle picture, showing a Puffin, with all the tiles in the correct position" 
+      id="sneaky-peek-pic">`;
     break;
-    case "1": currentImage = "assets/images/bee/bee-sneaky-peek.webp";
+    case "1": 
+      currentImage = `<img src="assets/images/bee/bee-sneaky-peek.webp" 
+      alt="The completed puzzle picture, showing a Bee, with all the tiles in the correct position" 
+      id="sneaky-peek-pic">`;
     break;
     default:
       console.log("No sneaky peek match for picture number");
@@ -542,7 +548,7 @@ function sneakyPeak() {
     break;
   }
   // Add sneaky peek image to DOM
-  image.src = currentImage;
+  imageContainer.innerHTML = currentImage;
   // Add click event listener to close symbol that changes display back to none and re-hides modal
   let closeCross = document.getElementById("close-sneaky-peek");
   closeCross.onclick = function() {
