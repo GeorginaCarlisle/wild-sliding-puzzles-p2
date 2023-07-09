@@ -37,8 +37,9 @@
       </p>
     </div>
 
-    <!-- Container for image to allow for layout and positioning styling -->
+    <!-- Container to allow for flexbox positioning of the image and navigation buttons alongside each other on larger screens -->
     <div id="image-plus-nav">
+      <!-- Container for images to allow for layout and positioning styling -->
       <div class="image-container" id="landing-page-images">
         <img 
           src="assets/images/landing-page-1.webp" 
@@ -50,7 +51,6 @@
           class="landing-image" id="bee-landing-image">
       </div>
  
-      <!-- Buttons to be positioned together -->
       <nav id="landing-page-nav">
         <!-- <a> tag used for buttons that are page links so that semantics are clear, then styled as a button -->
         <a href="puzzle.html" class="anchor-button">
@@ -59,10 +59,10 @@
     
         <!-- Trigger to open instructions modal -->
         <button id="button-instructions">Instructions</button>
-        <!-- Instructions modal -->
+        <!-- Instructions modal. Modal created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp-->
         <div id="modal-instructions" class="modal">
           <span class="close">&times;</span>
-          <!-- Instructions content -->
+          <!-- Instructions modal content -->
           <div class="modal-content">
             <h2>Instructions</h2>
             <ol>
@@ -104,7 +104,7 @@
         </a>
       </span>
     </div>
-      <!-- Container to keep link and associated text together -->
+    <!-- Container to keep wild isles link and associated text together -->
     <div id="wild-isles">
       <p>and inspired by Wild Isles</p>
       <a href="https://www.saveourwildisles.org.uk"
@@ -114,7 +114,6 @@
         <i class="fa-solid fa-paw"></i>
       </a>
     </div>
-  </main>
   </footer>
   
   <!-- Link to the JavaScript file -->
