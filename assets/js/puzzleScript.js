@@ -167,7 +167,7 @@ function setGamePicture(pictureNumber) {
  */
 function scrambleGamePicture() {
   // Generate a random number, range of random numbers generated reflects the number of scramble settings available
-  let scrambleNumber = Math.floor(Math.random() * 2);
+  let scrambleNumber = Math.floor(Math.random() * 4);
   console.log("scramble setting chosen is " + scrambleNumber);
   // Array items specify a grid area (grid-row-start/grid-column-start/grid-row-end/column-row-end) 
   let scrambleSetting = [];
@@ -197,6 +197,32 @@ function scrambleGamePicture() {
         "2/2/3/3",
         "1/1/2/2"
       ];
+    break;
+    case 2: 
+      scrambleSetting = [
+        "1/1/2/2",
+        "3/3/4/4",
+        "1/2/2/3",
+        "2/2/3/3",
+        "1/3/2/4",
+        "3/2/4/3",
+        "3/1/4/2",
+        "2/1/3/2",
+        "2/3/3/4"
+    ];
+    break;
+    case 3: 
+      scrambleSetting = [
+        "3/2/4/3",
+        "2/3/3/4",
+        "2/1/3/2",
+        "1/1/2/2",
+        "1/2/2/3",
+        "2/2/3/3",
+        "3/1/4/2",
+        "3/3/4/4",
+        "1/3/2/4"
+    ];
     break;
     default:
       console.log("No match for scramble setting");
