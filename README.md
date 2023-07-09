@@ -1,7 +1,7 @@
 # Wild Sliding Puzzles
 Developer: Georgina Carlisle
 
-Responsive image
+![Image showing how the puzzle page is displayed on different screen sizes](documentation/responsive-site-image.png)
 
 Project Description
 
@@ -303,6 +303,8 @@ if (completedPuzzleNumbers.length === 2)
 
 [Responsive Web Design Checker](https://responsivedesignchecker.com) - Used to check responsivity across a range of devices and screen sizes
 
+[Am I responsive](https://ui.dev/amiresponsive) - Used to create the image displayed at the beginning of the readme.
+
 [Favicon.cc](https://www.favicon.cc/) - Used to create the favicon.
 
 [Return to contents list](#contents)
@@ -319,6 +321,7 @@ if (completedPuzzleNumbers.length === 2)
 
 ### Images
 - **Favicon image**: Created using [Favicon.cc](https://www.favicon.cc/)
+- **Responsive site image**: Created through the website [Am I responsive](https://ui.dev/amiresponsive)
 
 
 [Return to contents list](#contents)
