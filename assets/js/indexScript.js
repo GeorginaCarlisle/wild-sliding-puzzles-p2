@@ -8,12 +8,11 @@ window.onload = function() {
 /**
  * Called when the Instructions button is clicked. Click event Listener activated on load.
  * Instructions modal displayed block and visible. 
- * Modal created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
  * Click event listener added to close symbol with anonymous function to hide modal.
  * Tile click event listeners prevented from activating further code while modal displayed.
  */
 function instructions() {
-  // Display modal
+  // Display modal. Modal created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
   let modal = document.getElementById("modal-instructions");
   modal.style.display = "block";
   // Prevent tile click event listeners for activating further code

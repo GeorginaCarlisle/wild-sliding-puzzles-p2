@@ -4,8 +4,6 @@ let preventClick = false;
 // Load page before setting the game picture
 window.onload = chooseGamePicture();
 
-// window.onload = setGamePicture();
-
 // Load page before adding event listeners to modal buttons
 window.onload = function() {
   // Add click event listener to the Sneaky peek button
@@ -89,7 +87,6 @@ function chooseGamePicture() {
     setGamePicture(pictureNumber);
   }
 }
-
 
 /**
  * Set game picture will be called once a game picture has been randomly chosen.
@@ -515,11 +512,6 @@ function checkWin() {
   }
 }
 
-/** 
- * The following modal functions: sneakyPeak, instructions and tips 
- * were created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
-*/
-
 /**
  * Called when the Sneaky peek button is clicked. Click event Listener activated on load.
  * Sneaky Peek modal displayed block and visible. 
@@ -528,7 +520,7 @@ function checkWin() {
  * Tile click event listeners prevented from activating further code while modal displayed.
  */
 function sneakyPeak() {
-  // Display modal
+  // Display modal. Modal created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
   let modal = document.getElementById("modal-sneaky-peek");
   modal.style.display = "block";
   // Prevent tile click event listeners for activating further code
@@ -568,7 +560,7 @@ function sneakyPeak() {
  * Tile click event listeners prevented from activating further code while modal displayed.
  */
 function instructions() {
-  // Display modal
+  // Display modal. Modal created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
   let modal = document.getElementById("modal-instructions");
   modal.style.display = "block";
   // Prevent tile click event listeners for activating further code
@@ -590,7 +582,7 @@ function instructions() {
  * Tile click event listeners prevented from activating further code while modal displayed.
  */
 function tips() {
-  // Display modal
+  // Display modal. Modal created following the steps given in 'How To - CSS/JS Modal' by W3 Schools https://www.w3schools.com/howto/howto_css_modals.asp
   let modal = document.getElementById("modal-tips");
   modal.style.display = "block";
   // Prevent tile click event listeners for activating further code

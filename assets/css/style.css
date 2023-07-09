@@ -24,7 +24,6 @@ h1 {
   font-weight: 400;
 }
 
-
 h2 {
   color: #c43329;
 }
@@ -121,7 +120,6 @@ footer a {
 }
 
 /* Styling specific to index.html */
-
 #key-word-paragraph {
   display: flex;
   justify-content: space-between;
@@ -165,9 +163,7 @@ footer a {
   margin: 0 auto;
 }
 
-
 /* Styling specefic to the puzzle */
-
 #puzzle-grid-container {
   /* Size of the container will change relative to the size of the window while maintaining its aspect ratio */
   width: 80%;
@@ -309,7 +305,6 @@ ul {
 }
 
 /* Styling specific to the win page */
-
 #original-picture {
   box-shadow: 10px 10px 15px grey;
   border: 1.8px solid black;
