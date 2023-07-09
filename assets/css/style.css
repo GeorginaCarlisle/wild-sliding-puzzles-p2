@@ -360,6 +360,10 @@ ul {
   .modal {
     width: 350px;
   }
+
+  #original-picture {
+    width: 420px;
+  }
 }
 
 /* Responsive styling for screens larger than width 700px */
@@ -389,6 +393,9 @@ ul {
   /* Win page */
   #information {
     font-size: 18px;
+  }
+  #original-picture {
+    width: 450px;
   }
 
   /* Modals */
