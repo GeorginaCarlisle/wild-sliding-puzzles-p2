@@ -1,5 +1,5 @@
 // Global variables that need to be accessible in multiple functions
-let preventClick = false;
+let preventClick = false; //Tile click event listeners currently active
 
 // Load page before setting the game picture
 window.onload = chooseGamePicture();
