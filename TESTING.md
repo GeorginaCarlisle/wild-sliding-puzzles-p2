@@ -199,6 +199,17 @@ Mobile testing -Screen shot shows Apple iPhone 3/4/4s
 
 ## User Testing
 
+### During development
+The project was deployed to git hub pages early on, as soon as the puzzle was working and tested by myself and close family throughout the remaining development.
+
+The following observation was brought up:
+- The initial idea to have a single image of a scrambled puzzle on the landing page was confusing. It lead the user to believe that this might be the puzzle and they attempted clicking on the tiles to have a go. In response, I created an image showing two different scrambled puzzles, rotated at an angle and overlapping. This image did not then give the impression that it was the actual puzzle.
+
+### On completion
+The site was tested by numerous friends and family on completion and was also posted on the peer-code-review slack channel.
+
+Response from all users at this point was good with no comments as to any need for change or improvement.
+
 [Return to contents list](#contents)
 
 ## Manual Testing
