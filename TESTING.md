@@ -126,6 +126,18 @@ Steps taken to improve performance:
 
 ## Accessibility Testing
 
+#### Wave report for the landing page
+
+![Wave report for landing page](documentation/wave-testing/landing-page-wave-testing.png)
+
+#### Wave report for the puzzle page
+
+![Wave report for puzzle page](documentation/wave-testing/puzzle-page-wave-testing.png)
+
+#### Wave report for the win page
+
+![Wave report for win page](documentation/wave-testing/win-page-wave-testing.png)
+
 [Return to contents list](#contents)
 
 ## Browser Testing
