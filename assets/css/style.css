@@ -44,11 +44,11 @@ h1, h2 {
 }
 
 .text-container {
-  
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+/* Navigation specific styling */
 nav {
   display: flex;
   justify-content: space-around;
@@ -333,7 +333,7 @@ ul {
   }
 }
 
-/* Responsive styling for screens larger than width 500px */
+/* Responsive styling for screens larger than width 580px */
 @media screen and (min-width:580px) {
   /* Add back in the extra footer text */
   .extra-info {
@@ -482,7 +482,6 @@ ul {
 
 /* Responsive styling for screens larger than width 1300px */
 @media screen and (min-width:1300px) {
-  
   button, .anchor-button {
     font-size: 30px;
     padding: 12px 15px;
