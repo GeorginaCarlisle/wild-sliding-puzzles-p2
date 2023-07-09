@@ -494,15 +494,15 @@ function swapTile(tile) {
  */
 function checkWin() {
   if (
-    document.getElementById("tile-1").style.gridArea === "1 / 1 / 2 / 2"
-    && document.getElementById("tile-2").style.gridArea === "1 / 2 / 2 / 3"
-    && document.getElementById("tile-3").style.gridArea === "1 / 3 / 2 / 4"
-    && document.getElementById("tile-4").style.gridArea === "2 / 1 / 3 / 2"
-    && document.getElementById("tile-5").style.gridArea === "2 / 2 / 3 / 3"
-    && document.getElementById("tile-6").style.gridArea === "2 / 3 / 3 / 4"
-    && document.getElementById("tile-7").style.gridArea === "3 / 1 / 4 / 2"
-    && document.getElementById("tile-8").style.gridArea === "3 / 2 / 4 / 3"
-    && document.getElementById("tile-9").style.gridArea === "3 / 3 / 4 / 4"
+    document.getElementById("tile-1").style.gridArea === "1 / 1 / 2 / 2" && 
+    document.getElementById("tile-2").style.gridArea === "1 / 2 / 2 / 3" && 
+    document.getElementById("tile-3").style.gridArea === "1 / 3 / 2 / 4" && 
+    document.getElementById("tile-4").style.gridArea === "2 / 1 / 3 / 2" && 
+    document.getElementById("tile-5").style.gridArea === "2 / 2 / 3 / 3" && 
+    document.getElementById("tile-6").style.gridArea === "2 / 3 / 3 / 4" && 
+    document.getElementById("tile-7").style.gridArea === "3 / 1 / 4 / 2" && 
+    document.getElementById("tile-8").style.gridArea === "3 / 2 / 4 / 3" && 
+    document.getElementById("tile-9").style.gridArea === "3 / 3 / 4 / 4"
   ) {
     // Add a slight pause before loading the win page
     setTimeout(function(){ open("win.html", "_self");}, 1000);

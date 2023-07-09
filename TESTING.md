@@ -56,6 +56,7 @@ I fixed these errors by inserting the missing semicolons in lines 6 and 22
 
 I fixed these errors by:
 - inserting the missing semicolons in lines 18, 65, 559. 581 and 603
+- removing the line breaks before the && and placing after instead, lines 497 - 505
 
 ##### Initial errors for winScript.js
 
