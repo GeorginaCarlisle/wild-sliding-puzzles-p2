@@ -184,6 +184,17 @@ Heading text on modal background
 
 ## Reponsive Testing
 
+[Responsive Web Design Checker](https://responsivedesignchecker.com) was used to test responsivity across all the following devices and their associated screen sizes. Changes to base styling and web queries were added in response to testing. 
+
+Desktop testing - Screen shot shows 24" Desktop, please note the left hand side of the window is obscurred by the menu.
+![Desktop testing - Screen shot shows 24" Desktop](documentation/responsive-testing/responsive-testing-desktop.png)
+
+Tablet testing - Screen shot shows Samsung Galaxy Tab 10
+![Tablet testing - Screen shot shows Samsung Galaxy Tab 10](documentation/responsive-testing/responsive-testing-tablet.png)
+
+Mobile testing -Screen shot shows Apple iPhone 3/4/4s
+![Mobile testing -Screen shot shows Apple iPhone 3/4/4s](documentation/responsive-testing/responsive-testing-mobile.png)
+
 [Return to contents list](#contents)
 
 ## User Testing

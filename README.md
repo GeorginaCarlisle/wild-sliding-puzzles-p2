@@ -301,6 +301,8 @@ if (completedPuzzleNumbers.length === 2)
 [Wave web accessibility evaluation tool](https://wave.webaim.org/) - Used to test accessibility
 [WebAim contrast checker](https://webaim.org/resources/contrastchecker/) - Used to test contrast between text and background
 
+[Responsive Web Design Checker](https://responsivedesignchecker.com) - Used to check responsivity across a range of devices and screen sizes
+
 [Favicon.cc](https://www.favicon.cc/) - Used to create the favicon.
 
 [Return to contents list](#contents)
