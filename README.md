@@ -5,7 +5,8 @@ Developer: Georgina Carlisle
 
 Project Description
 
-Link to live page - This project is currently under construction
+Link to live page: 
+https://georginacarlisle.github.io/wild-sliding-puzzles-p2/
 
 ## Contents
 [Features](#features)
