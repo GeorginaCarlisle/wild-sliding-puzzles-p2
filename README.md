@@ -299,18 +299,25 @@ if (completedPuzzleNumbers.length === 2)
 [Return to contents list](#contents)
 
 ## Tools and Technologies
-[Nu Html Checker](https://validator.w3.org/nu/) - Used to test the HTML code
-[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code
-[Jshint](https://jshint.com/) - Used to test the JavaScript code
 
-[Wave web accessibility evaluation tool](https://wave.webaim.org/) - Used to test accessibility
-[WebAim contrast checker](https://webaim.org/resources/contrastchecker/) - Used to test contrast between text and background
-
-[Responsive Web Design Checker](https://responsivedesignchecker.com) - Used to check responsivity across a range of devices and screen sizes
-
-[Am I responsive](https://ui.dev/amiresponsive) - Used to create the image displayed at the beginning of the readme.
-
-[Favicon.cc](https://www.favicon.cc/) - Used to create the favicon.
+- VScode: Used for writing, previewing and pushing the code to git hub
+- Git: Used for version control
+- Git hub: Used to store the repository for this project
+- Git hub pages: Used to deploy the website
+- [Balsamiq](https://balsamiq.com/): Used for creating the wireframes
+- PhotoScape X: Used to crop original image to make the tiles needed for the puzzle, as well as to resize all images as needed.
+- [Adobe](https://color.adobe.com/create/color-wheel) - Used to create the image showing the colour scheme.
+- Chrome Developer tools - Used throughout the development of this project to view and adjust CSS style rules, to see console logs, to monitor session storage and to test performance using lighthouse.
+- [Nu Html Checker](https://validator.w3.org/nu/) - Used to test the HTML code
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code
+- [Jshint](https://jshint.com/) - Used to test the JavaScript code
+- [Wave web accessibility evaluation tool](https://wave.webaim.org/) - Used to test accessibility
+- [WebAim contrast checker](https://webaim.org/resources/contrastchecker/) - Used to test contrast between text and background
+- [Responsive Web Design Checker](https://responsivedesignchecker.com) - Used to check responsivity across a range of devices and screen sizes
+- [Am I responsive](https://ui.dev/amiresponsive) - Used to create the image displayed at the beginning of the readme
+- [Favicon.cc](https://www.favicon.cc/) - Used to create the favicon
+- [Google Fonts](https://fonts.google.com/) - Used to choose and download fonts
+- [Font Awesome](https://fontawesome.com/) - Used to download the icons used as part of the footer 
 
 [Return to contents list](#contents)
 
