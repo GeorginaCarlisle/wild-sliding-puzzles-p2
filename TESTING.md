@@ -25,6 +25,9 @@ Developer: Georgina Carlisle
 ### HTML Validation
 
 #### Index.html
+
+![Image showing validation for index.html](documentation/code-validation/index.html-validation.png)
+
 ##### Initial error
 
 ![Image showing validation error for index.html](documentation/code-validation/index.html-validation-error.png)
@@ -32,6 +35,10 @@ Developer: Georgina Carlisle
 I fixed this error by removing the offending / from the favicon link in all HTML pages
 
 #### Puzzle.html
+
+![Image showing validation for puzzle.html](documentation/code-validation/puzzle.html-validation.png)
+
+Warning left in this instance. Aria-label used to provide an explanation of the puzzle grid which cannot be ascertained from the html.
 
 ##### Initial error
 
@@ -41,27 +48,47 @@ I fixed this error by removing the image element from the HTML document and inst
 
 #### Win.html
 
+![Image showing validation for win.html](documentation/code-validation/win.html-validation.png)
+
 [Return to contents list](#contents)
 
 ### CSS Validation
+
+![Image showing validation for style.css](documentation/code-validation/css-validation.png)
 
 [Return to contents list](#contents)
 
 ### JavaScript Validation
 
+#### IndexScript.js
+
+![Image showing validation for indexScript.js](documentation/code-validation/css-validation.png)
+
 ##### Initial errors for indexScript.js
 
-![Image showing validation errors for indexScript.js](documentation/code-validation/indexScript.js-validation-errors.png)
+![Image showing validation errors for indexScript.js](documentation/code-validation/indexScript.js-validation.png)
 
 I fixed these errors by inserting the missing semicolons in lines 6 and 22
+
+#### PuzzleScript.js
+
+![Image showing validation for puzzleScript.js](documentation/code-validation/puzzleScript.js-validation.png)
+
+Warning left in this instance as performance and function of the puzzle is not effected with no errors or warnings brought up during any other testing.
 
 ##### Initial errors for puzzleScript.js
 
 ![Image showing validation errors for puzzleScript.js](documentation/code-validation/puzzleScript.js-validation-errors.png)
 
 I fixed these errors by:
+
 - inserting the missing semicolons in lines 18, 65, 559. 581 and 603
+
 - removing the line breaks before the && and placing after instead, lines 497 - 505
+
+#### WinScript.js
+
+![Image showing validation for winScript.js](documentation/code-validation/winScript.js-validation.png)
 
 ##### Initial errors for winScript.js
 

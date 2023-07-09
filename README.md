@@ -294,7 +294,9 @@ if (completedPuzzleNumbers.length === 2)
 [Return to contents list](#contents)
 
 ## Tools and Technologies
-
+[Nu Html Checker](https://validator.w3.org/nu/) - Used to test the HTML code
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - Used to test the CSS code
+[Jshint](https://jshint.com/) - Used to test the JavaScript code
 [Favicon.cc](https://www.favicon.cc/) - Used to create the favicon.
 
 [Return to contents list](#contents)
