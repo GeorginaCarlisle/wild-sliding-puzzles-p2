@@ -15,7 +15,7 @@ window.onload = function() {
   // Add click event listener to the Tips button
   let btnTips = document.getElementById("button-tips");
   btnTips.addEventListener('click', tips);
-}
+};
 
 /**
  * Called on load
@@ -62,7 +62,7 @@ function chooseGamePicture() {
         if (loop === 100) {
           console.log ("breaking out after 100 iterations");
           sessionStorage.removeItem("completedPictures");
-          alert("All available puzzles have now been viewed. Puzzle data will now be reset and previously shown puzzles will be shown again")
+          alert("All available puzzles have now been viewed. Puzzle data will now be reset and previously shown puzzles will be shown again");
           break;
         }
         else {
@@ -556,7 +556,7 @@ function sneakyPeak() {
     preventClick = false;
     // Hide modal 
     modal.style.display = "none";
-  }
+  };
 }
 
 /**
@@ -578,7 +578,7 @@ function instructions() {
     preventClick = false;
     // Hide modal 
     modal.style.display = "none";
-  }
+  };
 }
 
 /**
@@ -600,5 +600,5 @@ function tips() {
     preventClick = false;
     // Hide modal 
     modal.style.display = "none";
-  }
+  };
 }

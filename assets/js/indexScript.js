@@ -3,7 +3,7 @@ window.onload = function() {
   // Add click event listener to the Instructions button
   let btnInstructions = document.getElementById("button-instructions");
   btnInstructions.addEventListener('click', instructions);
-}
+};
 
 /**
  * Called when the Instructions button is clicked. Click event Listener activated on load.
@@ -19,5 +19,5 @@ function instructions() {
   closeCross.onclick = function() {
     // Hide modal 
     modal.style.display = "none";
-  }
+  };
 }

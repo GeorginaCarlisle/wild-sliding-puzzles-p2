@@ -60,7 +60,7 @@ function loadPuzzleName(currentPuzzle) {
   }
   let nameSpan = document.getElementById("subject");
   nameSpan.innerHTML = puzzleName;
-  console.log("Puzzle name is:" + puzzleName)
+  console.log("Puzzle name is:" + puzzleName);
 }
 
 /**
@@ -133,7 +133,7 @@ function checkPuzzlesCompleted(completedPuzzleNumbers) {
  */
 function allPuzzlesSeen() {
   let paragraph = document.getElementById("all-puzzles-seen");
-  let message = "You have now seen all the available puzzles. Did you manage to solve them all?"
+  let message = "You have now seen all the available puzzles. Did you manage to solve them all?";
   paragraph.innerHTML = message;
   let button = document.getElementById("play-again-button");
   let newLabel = "Reset and play again";

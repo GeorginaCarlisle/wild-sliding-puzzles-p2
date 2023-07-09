@@ -44,6 +44,25 @@ I fixed this error by removing the image element from the HTML document and inst
 
 ### JavaScript Validation
 
+##### Initial errors for indexScript.js
+
+![Image showing validation errors for indexScript.js](documentation/code-validation/indexScript.js-validation-errors.png)
+
+I fixed these errors by inserting the missing semicolons in lines 6 and 22
+
+##### Initial errors for puzzleScript.js
+
+![Image showing validation errors for puzzleScript.js](documentation/code-validation/puzzleScript.js-validation-errors.png)
+
+I fixed these errors by:
+- inserting the missing semicolons in lines 18, 65, 559. 581 and 603
+
+##### Initial errors for winScript.js
+
+![Image showing validation errors for winScript.js](documentation/code-validation/winScript.js-validation-errors.png)
+
+I fixed these errors by inserting the missing semicolons in lines 63 and 136
+
 [Return to contents list](#contents)
 
 ## Performance
