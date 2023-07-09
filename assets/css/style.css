@@ -111,6 +111,10 @@ footer a {
   color: #1118a6;
 }
 
+footer a:hover {
+  color: #c43329;
+}
+
 #wild-isles > a {
   padding-left: 0.5rem;
   padding-right: 1rem;
