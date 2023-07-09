@@ -38,8 +38,6 @@ I fixed this error by removing the offending / from the favicon link in all HTML
 
 ![Image showing validation for puzzle.html](documentation/code-validation/puzzle.html-validation.png)
 
-Warning left in this instance. Aria-label used to provide an explanation of the puzzle grid which cannot be ascertained from the html.
-
 ##### Initial error
 
 ![Image showing validation error for puzzle.html](documentation/code-validation/puzzle.html-validation-error.png)
@@ -74,8 +72,6 @@ I fixed these errors by inserting the missing semicolons in lines 6 and 22
 
 ![Image showing validation for puzzleScript.js](documentation/code-validation/puzzleScript.js-validation.png)
 
-Warning left in this instance as performance and function of the puzzle is not effected with no errors or warnings brought up during any other testing.
-
 ##### Initial errors for puzzleScript.js
 
 ![Image showing validation errors for puzzleScript.js](documentation/code-validation/puzzleScript.js-validation-errors.png)
@@ -83,7 +79,6 @@ Warning left in this instance as performance and function of the puzzle is not e
 I fixed these errors by:
 
 - inserting the missing semicolons in lines 18, 65, 559. 581 and 603
-
 - removing the line breaks before the && and placing after instead, lines 497 - 505
 
 #### WinScript.js
