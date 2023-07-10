@@ -156,14 +156,14 @@ A number of additional alerts have also been programmed in case of future bugs, 
 
 ### Future Features
 
-The following project requirement and associated features has not yet been met, please note this was always planned for future installments (see the structure plane):
+The following project requirement and associated features has not yet been met, please note this was always planned for future installments (see the scope plane):
 - Option for sound effects and/or music to accompany the game
   - 20. Celebratory audio to play on completion of the puzzle
   - 22. Positive sound effect/slide sound effect on clicking a movable tile. Negative sound effect on clicking an immovable tile. User control to mute
 [Return to contents list](#contents)
   - 23. Background music. User control to play
 
-The following features are to be included in future installments and further build on project requirements that have already been met. With one exception (12), all were planned for future installments (see the structure plane):
+The following features are to be included in future installments and further build on project requirements that have already been met. With one exception (12), all were planned for future installments (see the scope plane):
 - 12. Hovering over a movable tile will give feedback to the user to indicate it can be moved. This was planned for the first installment, however on balancing the time and code needed to add this feature against the increase in user values it was decided to leave it until future releases.
 - 14. Keyboard arrows can be used to slide a tile corresponding to the direction of arrow pressed.
 - 15. Clicking a keyboard arrow that doesn’t correspond to a movable tile will give feedback to indicate it cannot be moved.
@@ -233,7 +233,7 @@ The scope for this project explores the requirements of both user and owner, and
 | Extra help for the user if needed | 24. Clearly visible button on the game page will display tips in a pop-up window | 1st |
 | | 25. Clearly visible button on the game page will display an image of the completed picture | 1st |
 | Option to play again | 26. Win message (feature 18) comes with an option to play again | 1st |
-| | 27. Clearly visible button that resets the game page with a different scrambled image. Available on the win page (feature 20) | 2nd (replaces feature 26) |
+| | 27. Clearly visible button that resets the game page with a different scrambled image. Available on the win page (feature 19) | 2nd (replaces feature 26) |
 | A different puzzle on each subsequent game | 28. Multiple puzzle images available with logic in place to ensure user is given a different puzzle on each subsequent game | 2nd |
 | Feedback to user when they have completed all available puzzles | 29. Extra message on Win page once user has cycled through all available puzzles. Option to reset and play the puzzles again | 2nd |
 | Provide users with information about some of our incredible wildlife and what is happening right now | see features 4, 6 + 20 | 2nd |
