@@ -3,7 +3,9 @@ Developer: Georgina Carlisle
 
 ![Image showing how the puzzle page is displayed on different screen sizes](documentation/responsive-site-image.png)
 
-Project Description
+A fun, enjoyable and addictive sliding puzzle game that promotes wildlife and wild landscapes in the British Isles and the work being done through the 'Save Our Wild Isles' project. 
+
+Users are faced with a scrambled image and need to slide the tiles around the grid in order to get all the tiles in their correct positions and thus reveal the picture. On completing the puzzle, users will be taken to a win page where they can learn more about the subject of the picture.
 
 Link to live page: 
 https://georginacarlisle.github.io/wild-sliding-puzzles-p2/
