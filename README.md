@@ -240,7 +240,7 @@ The scope for this project explores the requirements of both user and owner, and
 | | 27. Clearly visible button that resets the game page with a different scrambled image. Available on the win page (feature 19) | 2nd (replaces feature 26) |
 | A different puzzle on each subsequent game | 28. Multiple puzzle images available with logic in place to ensure user is given a different puzzle on each subsequent game | 2nd |
 | Feedback to user when they have completed all available puzzles | 29. Extra message on Win page once user has cycled through all available puzzles. Option to reset and play the puzzles again | 2nd |
-| Provide users with information about some of our incredible wildlife and what is happening right now | see features 4, 6 + 20 | 2nd |
+| Provide users with information about some of our incredible wildlife and what is happening right now | see features 4, 6 + 19 | 2nd |
 | Provide a link to further information about our ‘Wild Isles’ including how the user can help to make a difference | See features 3 + 5 | 1st (3) and 2nd (5) |
 
 [Return to contents list](#contents)
