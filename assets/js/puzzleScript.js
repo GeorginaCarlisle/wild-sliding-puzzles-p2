@@ -26,20 +26,16 @@ window.onload = function() {
 function chooseGamePicture() {
   // Generate a random number, range of random numbers generated reflects the number of puzzle pictures available
   let pictureNumber = Math.floor(Math.random() * 3);
-  console.log("picture number chosen is " + pictureNumber);
   // link to session storage
   let previousPictureNumbers = sessionStorage.getItem("completedPictures");
   // Check to see if any pictures have been completed
   if (previousPictureNumbers){
     // There has been a previous picture number saved
     let positionOfMatch = previousPictureNumbers.search(pictureNumber);
-    console.log("Position match is: " + positionOfMatch);
     // New number doesn't match any of previous numbers
     if (positionOfMatch === -1) {
-      console.log("New picture confirmed as: " + pictureNumber);
       // New picture number now added to the string
       let newPictureNumbers = previousPictureNumbers + pictureNumber;
-      console.log("New picture numbers are: " + newPictureNumbers);
       sessionStorage.setItem("completedPictures", newPictureNumbers);
       // Call setGamePicture and pass on the chosen picture number
       setGamePicture(pictureNumber);
@@ -49,18 +45,13 @@ function chooseGamePicture() {
       // Following loop to run until there is no match, or break point reached
       let loop = 0;
       while (positionOfMatch !== -1) {
-        console.log("While loop running");
-        console.log("loop number: " + loop);
         loop++;
         // generate a new random number
         pictureNumber = Math.floor(Math.random() * 3);
-        console.log("New picture number is: " + pictureNumber);
         // checks for a match
         positionOfMatch = previousPictureNumbers.search(pictureNumber);
-        console.log("Position match is: " + positionOfMatch);
         // break out clause to prevent loop from running indefinitely
         if (loop === 100) {
-          console.log ("breaking out after 100 iterations");
           sessionStorage.removeItem("completedPictures");
           alert("All available puzzles have now been viewed. Puzzle data will now be reset and previously shown puzzles will be shown again");
           break;
@@ -70,11 +61,9 @@ function chooseGamePicture() {
         }
       }
       // New picture number now generated that doesn't match
-      console.log("New picture confirmed as: " + pictureNumber);
       // New picture number now added to the string. Reset previousPictureNumbers variable to pick up clearing of data when all puzzles have been completed.
       previousPictureNumbers = sessionStorage.getItem("completedPictures");
       let newPictureNumbers = previousPictureNumbers + pictureNumber;
-      console.log("New picture numbers are: " + newPictureNumbers);
       sessionStorage.setItem("completedPictures", newPictureNumbers);
       // Call setGamePicture and pass on the chosen picture number
       setGamePicture(pictureNumber);
@@ -139,7 +128,6 @@ function setGamePicture(pictureNumber) {
       ];
     break;
     default:
-      console.log("No match for picture number");
       alert("puzzle pictures cannot be found, please contact developer");
     break;
   }
@@ -155,7 +143,6 @@ function setGamePicture(pictureNumber) {
       } // clickedTile function will not run during tile slide and tile swap phases, see slideTileRight etc.
     });
   }
-  console.log("Game picture set");
   scrambleGamePicture();
 }
 
@@ -168,7 +155,6 @@ function setGamePicture(pictureNumber) {
 function scrambleGamePicture() {
   // Generate a random number, range of random numbers generated reflects the number of scramble settings available
   let scrambleNumber = Math.floor(Math.random() * 4);
-  console.log("scramble setting chosen is " + scrambleNumber);
   // Array items specify a grid area (grid-row-start/grid-column-start/grid-row-end/column-row-end) 
   let scrambleSetting = [];
   switch(scrambleNumber) {
@@ -225,7 +211,6 @@ function scrambleGamePicture() {
     ];
     break;
     default:
-      console.log("No match for scramble setting");
       alert("scramble setting cannot be found, please contact developer");
     break;
   }
@@ -233,7 +218,6 @@ function scrambleGamePicture() {
   for (let i = 0; i < 9; i++) {
     let tile = document.getElementById('tile-' + (i+1));
     tile.style.gridArea = scrambleSetting[i];
-    console.log(tile);
   }
 }
 
@@ -246,9 +230,7 @@ function clickedTile(tile) {
     alert("There is no tile here to click, it is an empty space");
   }
   else {
-    console.log(tile);
     let gridPosition = tile.style.gridArea;
-    console.log("Grid position of tile clicked is: " + gridPosition);
     switch(gridPosition) {
       case "1 / 1 / 2 / 2": gridOneClicked(tile);
       break;
@@ -460,7 +442,6 @@ function gridNineClicked(tile) {
  * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideRight(tile) {
-  console.log("slide tile right annimation activated");
   tile.style.animationName = "right-slide";
   preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
@@ -474,7 +455,6 @@ function tileSlideRight(tile) {
  * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideLeft(tile) {
-  console.log("slide tile left annimation activated");
   tile.style.animationName = "left-slide";
   preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
@@ -488,7 +468,6 @@ function tileSlideLeft(tile) {
  * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideUp(tile) {
-  console.log("slide tile up annimation activated");
   tile.style.animationName = "up-slide";
   preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
@@ -502,7 +481,6 @@ function tileSlideUp(tile) {
  * Prevents click event listeners for activating further code until after animation and tiles swapped
  */
 function tileSlideDown(tile) {
-  console.log("slide tile down annimation activated");
   tile.style.animationName = "down-slide";
   preventClick = true;
   setTimeout(function(){ swapTile(tile);}, 450);
@@ -517,12 +495,9 @@ function tileSlideDown(tile) {
 function swapTile(tile) {
   tile.style.animationName = "";
     let tilePosition = tile.style.gridArea;
-    console.log(tilePosition);
     let spacePosition = document.getElementById("tile-7").style.gridArea;
-    console.log(spacePosition);
     tile.style.gridArea = spacePosition;
     document.getElementById("tile-7").style.gridArea = tilePosition;
-    console.log("tiles swapped");
     checkWin();
 }
 
@@ -545,9 +520,6 @@ function checkWin() {
   ) {
     // Add a slight pause before loading the win page
     setTimeout(function(){ open("win.html", "_self");}, 1000);
-  }
-  else {
-    console.log("win not achieved");
   }
 }
 
@@ -587,7 +559,6 @@ function sneakyPeak() {
       id="sneaky-peek-pic">`;
     break;
     default:
-      console.log("No sneaky peek match for picture number");
       alert("Sneaky peek picture cannot be found, please contact developer");
     break;
   }

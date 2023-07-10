@@ -9,7 +9,6 @@ function locatePuzzleNumber() {
   // locate puzzleNumber for puzzle just completed
   let completedPuzzleNumbers = sessionStorage.getItem("completedPictures");
   let currentPuzzle = completedPuzzleNumbers.charAt(completedPuzzleNumbers.length -1);
-  console.log("Puzzle completed: " + currentPuzzle); 
   loadPuzzlePicture(currentPuzzle);
   loadPuzzleName(currentPuzzle);
   loadPuzzleInformation(currentPuzzle);
@@ -68,7 +67,6 @@ function loadPuzzleName(currentPuzzle) {
   }
   let nameSpan = document.getElementById("subject");
   nameSpan.innerHTML = puzzleName;
-  console.log("Puzzle name is:" + puzzleName);
 }
 
 /**
@@ -146,7 +144,6 @@ function loadPuzzleInformation(currentPuzzle) {
 function checkPuzzlesCompleted(completedPuzzleNumbers) {
   if (completedPuzzleNumbers.length === 3) {
     allPuzzlesSeen();
-    console.log("all puzzles seen");
   }
 }
 
@@ -173,6 +170,5 @@ function allPuzzlesSeen() {
 function resetSessionStorage (event){
   event.preventDefault();
   sessionStorage.removeItem("completedPictures");
-  console.log("storage cleared");
   open("puzzle.html", "_self");
 }
