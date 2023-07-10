@@ -154,7 +154,20 @@ A number of additional alerts have also been programmed in case of future bugs, 
 
 ### Future Features
 
+The following project requirement and associated features has not yet been met, please note this was always planned for future installments (see the structure plane):
+- Option for sound effects and/or music to accompany the game
+  - 20. Celebratory audio to play on completion of the puzzle
+  - 22. Positive sound effect/slide sound effect on clicking a movable tile. Negative sound effect on clicking an immovable tile. User control to mute
 [Return to contents list](#contents)
+  - 23. Background music. User control to play
+
+The following features are to be included in future installments and further build on project requirements that have already been met. With one exception (12), all were planned for future installments (see the structure plane):
+- 12. Hovering over a movable tile will give feedback to the user to indicate it can be moved. This was planned for the first installment, however on balancing the time and code needed to add this feature against the increase in user values it was decided to leave it until future releases.
+- 14. Keyboard arrows can be used to slide a tile corresponding to the direction of arrow pressed.
+- 15. Clicking a keyboard arrow that doesn’t correspond to a movable tile will give feedback to indicate it cannot be moved.
+- 17. Addition of a stopwatch to allow for personal challenge, how fast can you solve the puzzle? OR Addition of a set amount of time in which to complete the puzzle with easy, medium and hard settings.
+- 28. Multiple puzzle images available with logic in place to ensure user is given a different puzzle on each subsequent game. Three puzzles are currently available, but more are planned (see Adding additional puzzle images, for instructions on how to add additional puzzle images)
+- There are currently 4 scramble settings, again more are planned.
 
 ## Design
 
