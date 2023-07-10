@@ -83,7 +83,7 @@ I fixed these errors by:
 
 #### WinScript.js
 
-![Image showing validation for winScript.js](documentation/code-validation/winScript.js-validation.png)
+![Image showing validation for winScript.js](documentation/code-validation/winScript.js.validation.png)
 
 ##### Initial errors for winScript.js
 
