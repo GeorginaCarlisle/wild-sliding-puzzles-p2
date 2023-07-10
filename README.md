@@ -26,6 +26,10 @@ https://georginacarlisle.github.io/wild-sliding-puzzles-p2/
 
 [Deployment](#deployment)
 
+[Cloning this repository](#cloning)
+
+[Forking a branch](#forking)
+
 [Adding additional puzzle images](#adding-additional-puzzle-images)
 
 [Languages](#languages)
@@ -393,6 +397,45 @@ Instructions to deploy using GitHub pages:
 5 - The page will now reload and when you navigate back to pages a link for your published site will be present. Please note this can take awhile.
 
 [Return to contents list](#contents)
+
+## Cloning this repository
+
+In order to work on this repository you will first need to clone it.
+
+**Instructions to clone the repository**:
+
+1 - While in the GitHub repository, click on the green code button.
+
+2 - Copy the link.
+
+3 - In your IDE or local coding environment use the link to open the repository. 
+
+For example: in VScode 
+- clicking on 'Clone Git Repository...' will bring up a box in which to paste the link. 
+- once vscode has the link, you will then be asked where you would like the repo saving.
+- You should now be set up ready to work on the repository.
+
+For example: in CodeAnywhere
+- Click on 'Add new workspace'
+- You will then be given the option to 'Create from your project repository' and a box in which to paste the link
+- CodeAnywhere will now open a new workspace containing the repository.
+- You should now be set up ready to work on the repository.
+
+## Forking a branch
+
+In order to protect the main branch while you work on something new, essential when working as part of a team or when you want to experiment with a new feature, you will need to fork a branch.
+
+**Instructions to fork the repository**:
+
+1 - While in the GitHub repository, click on the branch symbol and text indicating the number of branches.
+
+2 - This will load details on current branches. Click on the green 'New branch' button.
+
+3 - Enter a name for the new branch and then click the green 'create new branch' button.
+
+4 - Your new branch should now have appeared on the screen.
+
+5 - Clicking on the new branch and then following the steps for cloning will allow you to open up and work on this branch.
 
 ## Adding additional puzzle images
 
