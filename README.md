@@ -50,7 +50,7 @@ The existing features provide the following project requirements:
 - Immediately clear what sort of puzzle this is, and its theme (7, 8 + 9)
 - Clear instructions that are accessible at all points without disrupting the puzzle (10)
 - Controls for the puzzle to be clear and easy to use (11 + 13)
-- Puzzle to be achievable but still provide a level of challenge. The level of challenge should allow me to 
+- Puzzle to be achievable but still provide a level of challenge. The level of challenge should allow the user to 
 feel a sense of achievement on completion (16)
 - Clear feedback when the puzzle has been completed (19)
 - Option to choose a different puzzle (21)
@@ -73,11 +73,10 @@ The project name (7) is displayed consistently at the top of all three pages.
 ![Footer](documentation/features/feature-footer.png)
 ![Footer](documentation/features/feature-footer-desktop.png)
 
-The footer is displayed at the bottom of all pages. It has been styled to be sticky.
+The footer is displayed at the bottom of all pages. It has been styled to be sticky. All footer links open in a new tab
 
 The footer includes:
 - A link to the 'Wild Isles' project (3)
-- All footer links open in a new tab
 
 #### Landing page
 
@@ -104,14 +103,17 @@ The puzzle page includes:
 - Images of UK wildlife are used for the puzzles (4)
 - Clicking on a movable tile causes the tile to slide into the empty space (11) and in this manner the tiles can be manipulated one by one to move them into their correct position, this takes a number of moves. Clicking on further tiles is prevent while the sliding is happening.
 - Clicking on an immovable tile triggers an alert informing the user that the tile cannot be moved (13)
+
 ![Puzzle page - alert "Tile clicked cannot be slid into the empty space"](documentation/features/feature-alert-cannot-slide.png)
 - An additional alert has also been included to give feedback when the empty space is clicked
+
 ![Puzzle page - alert "There is no tile here to click, it is an empty space"](documentation/features/feature-alert-empty-space.png)
 - Completion of the puzzle loads the win page (19)
 - The 'Change puzzle' button resets the page with a different scrambled image (21)
 - The 'Tips' button displays tips in a pop-up window (24)
 - The 'Sneaky peek' button displays an image of the completed picture in a pop-up window (25) 
 - An alert is triggered when the user has viewed all the available puzzles 
+
 ![Puzzle page - alert "All available puzzles have now been viewed. Puzzle data will now be reset and previously shown puzzles will be shown again"](documentation/features/alert-all-puzzles-seen.png)
 
 #### Sneaky peek modal
@@ -138,7 +140,8 @@ The win page (7) includes:
 - Further information about the picture subject (6)
 - The 'play again' button takes the user back to the puzzle page where a new puzzle picture will be displayed (27)
 - The 'learn more about our wild Isles' button opens the 'Save our Wild Isles' project in a seperate tab (5)
-- An extra message displays once the user has cycled through all available puzzles. The button 'reset and play again' clears the session storage of puzzles seen and takes the user back to the puzzle page where they will now be shown puzzle picture they have already seen
+- An extra message displays once the user has cycled through all available puzzles. The button 'reset and play again' clears the session storage of puzzles seen and takes the user back to the puzzle page where they will now be shown a puzzle picture that they have already seen
+
 ![Win page - all puzzles seen](documentation/features/feature-win-page-3.png)
 
 #### Favicon and page titles
@@ -160,20 +163,20 @@ A number of additional alerts have also been programmed in case of future bugs, 
 
 ### Future Features
 
-The following project requirement and associated features has not yet been met, please note this was always planned for future installments (see the scope plane):
+The following project requirement and associated features has not yet been met, please note this was always planned for future instalments (see the scope plane):
 - Option for sound effects and/or music to accompany the game
-  - 20. Celebratory audio to play on completion of the puzzle
-  - 22. Positive sound effect/slide sound effect on clicking a movable tile. Negative sound effect on clicking an immovable tile. User control to mute
+  - 20 Celebratory audio to play on completion of the puzzle
+  - 22 Positive sound effect/slide sound effect on clicking a movable tile. Negative sound effect on clicking an immovable tile. User control to mute
 [Return to contents list](#contents)
-  - 23. Background music. User control to play
+  - 23 Background music. User control to play
 
-The following features are to be included in future installments and further build on project requirements that have already been met. With one exception (12), all were planned for future installments (see the scope plane):
-- 12. Hovering over a movable tile will give feedback to the user to indicate it can be moved. This was planned for the first installment, however on balancing the time and code needed to add this feature against the increase in user values it was decided to leave it until future releases.
-- 14. Keyboard arrows can be used to slide a tile corresponding to the direction of arrow pressed.
-- 15. Clicking a keyboard arrow that doesn’t correspond to a movable tile will give feedback to indicate it cannot be moved.
-- 17. Addition of a stopwatch to allow for personal challenge, how fast can you solve the puzzle? OR Addition of a set amount of time in which to complete the puzzle with easy, medium and hard settings.
-- 28. Multiple puzzle images available with logic in place to ensure user is given a different puzzle on each subsequent game. Three puzzles are currently available, but more are planned (see Adding additional puzzle images, for instructions on how to add additional puzzle images)
-- There are currently 4 scramble settings, again more are planned.
+The following features are to be included in future instalments and further build on project requirements that have already been met. With one exception (12), all were planned for future instalments (see the scope plane):
+- 12 Hovering over a movable tile will give feedback to the user to indicate it can be moved. This was planned for the first installment, however on balancing the time and code needed to add this feature against the increase in user values it was decided to leave it until future releases.
+- 14 Keyboard arrows can be used to slide a tile corresponding to the direction of arrow pressed.
+- 15 Clicking a keyboard arrow that doesn’t correspond to a movable tile will give feedback to indicate it cannot be moved.
+- 17 Addition of a stopwatch to allow for personal challenge, how fast can you solve the puzzle? OR Addition of a set amount of time in which to complete the puzzle with easy, medium and hard settings.
+- 28 Multiple puzzle images available with logic in place to ensure user is given a different puzzle on each subsequent game. Three puzzles are currently available, but more are planned (see Adding additional puzzle images, for instructions on how to add additional puzzle images).
+- There are currently 4 scramble settings, with more to be added in future instalments.
 
 ## Design
 
@@ -321,20 +324,31 @@ The following wireframes show the instructions pop-up when activated from the pu
 Inspiration for the colour scheme came from the colours in the Puffin puzzle picture, with colours then being used to provide contrast to increase user experience by aiding readability and navigation.
 
 Main colour scheme:
+
 **A**: Page background colour
+
 **B**: Main heading
+
 **C**: Key words on the landing page and button background (text on buttons is white #FFFFFF)
+
 **D**: Footer background colour
+
 **E**: Footer anchor link icons (slightly different to the main heading colour in order to increase contrast to the footer background)
+
 All text unless specified is black #000000
 
 ![Table showing the colours used as part of the main colour scheme](documentation/colour-scheme/main-colour-scheme.webp)
 
 Modal colour scheme:
+
 **A**: Page background colour (included for reference)
+
 **B**: Modal background colour
+
 **C**: Heading
+
 **D**: Subheading
+
 All text unless specified is black #000000
 
 ![Table showing the colours used as part of the modal colour scheme](documentation/colour-scheme/modal-colour-scheme.webp)
@@ -364,12 +378,15 @@ See [TESTING.md](TESTING.md) for all testing and validation
 ## Bugs and fixes
 
 The original picture div used on the win page wasn't maintaining an aspect ratio of 1/1 leaving a white gap at the bottom of the container below the image.
+
 ![Screen shot of the original picture on the win page](documentation/bug-original-image-win.png)
 
 CSS associated with the div (the image was set a width of 100% and an original aspect ratio of 1/1)
+
 ![Screen shot of associated CSS](documentation/bug-original-image-css.png)
 
 An example of box model once all css rules applied
+
 ![Screen shot of an example box model](documentation/bug-original-image-box-model.png)
 
 I tried the following ways to fix this bug, none of these worked:
