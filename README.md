@@ -38,6 +38,118 @@ https://georginacarlisle.github.io/wild-sliding-puzzles-p2/
 
 ### Existing Features
 
+The existing features provide the following project requirements:
+- Fun and enjoyable puzzle (1)
+- Promote UK wildlife and wild landscapes and the work being done through the ‘Wild Isles’ project (2, 3, 4, 5 + 6)
+- Immediately clear what sort of puzzle this is, and its theme (7, 8 + 9)
+- Clear instructions that are accessible at all points without disrupting the puzzle (10)
+- Controls for the puzzle to be clear and easy to use (11 + 13)
+- Puzzle to be achievable but still provide a level of challenge. The level of challenge should allow me to 
+feel a sense of achievement on completion (16)
+- Clear feedback when the puzzle has been completed (19)
+- Option to choose a different puzzle (21)
+- Extra help for the user if needed (24 + 25)
+- Option to play again (27)
+- A different puzzle on each subsequent game (28)
+- Feedback to user when they have completed all available puzzles (29)
+- Provide users with information about some of our incredible wildlife and what is happening right now (4, 6 + 19)
+- Provide a link to further information about our ‘Wild Isles’ including how the user can help to make a 
+difference (3 + 5)
+
+#### Project Name
+
+![Page title](documentation/features/feature-title.png)
+
+The project name (7) is displayed consistently at the top of all three pages.
+
+#### Footer
+
+![Footer](documentation/features/feature-footer.png)
+![Footer](documentation/features/feature-footer-desktop.png)
+
+The footer is displayed at the bottom of all pages. It has been styled to be sticky.
+
+The footer includes:
+- A link to the 'Wild Isles' project (3)
+- All footer links open in a new tab
+
+#### Landing page
+
+![Landing page](documentation/features/feature-landing-page.png)
+
+The landing page includes:
+- A short introductory paragraph (2)
+- Static images of two jumbled sliding puzzle pictures (8) this is a slight deviation to the original plan. See user testing in TESTING.md for more information.
+- Clearly visible buttons to access the instructions (10) and to play the game
+
+#### Instructions modal (10)
+
+![Instructions modal](documentation/features/feature-instructions-modal.png)
+
+The instructions modal can be accessed from both the landing page and the puzzle page. Clicking on the x in the top right corner causes the modal to disappear again.
+
+#### Puzzle page 
+
+![Puzzle page](documentation/features/feature-puzzle-page.png)
+
+The puzzle page includes:
+- The sliding puzzle (1) with one of four pre-set scramble settings randomly chosen, ensuring that the puzzle is solvable (16)
+- Three different puzzle images are currently available with logic in place to ensure user is given a different puzzle on each subsequent game (28)
+- Images of UK wildlife are used for the puzzles (4)
+- Clicking on a movable tile causes the tile to slide into the empty space (11) and in this manner the tiles can be manipulated one by one to move them into their correct position, this takes a number of moves. Clicking on further tiles is prevent while the sliding is happening.
+- Clicking on an immovable tile triggers an alert informing the user that the tile cannot be moved (13)
+![Puzzle page - alert "Tile clicked cannot be slid into the empty space"](documentation/features/feature-alert-cannot-slide.png)
+- An additional alert has also been included to give feedback when the empty space is clicked
+![Puzzle page - alert "There is no tile here to click, it is an empty space"](documentation/features/feature-alert-empty-space.png)
+- Completion of the puzzle loads the win page (19)
+- The 'Change puzzle' button resets the page with a different scrambled image (21)
+- The 'Tips' button displays tips in a pop-up window (24)
+- The 'Sneaky peek' button displays an image of the completed picture in a pop-up window (25) 
+- An alert is triggered when the user has viewed all the available puzzles 
+![Puzzle page - alert "All available puzzles have now been viewed. Puzzle data will now be reset and previously shown puzzles will be shown again"](documentation/features/alert-all-puzzles-seen.png)
+
+#### Sneaky peek modal
+
+![Sneaky peek modal](documentation/features/feature-sneaky-peek-modal.png)
+
+The sneaky peek modal (25) can be accessed from the puzzle page and displays an image of the completed puzzle. Clicking on the x in the top right corner causes the modal to disappear again.
+
+#### Tips modal
+
+![Tips modal](documentation/features/feature-tips-modal.png)
+
+The tips modal (24) can be accessed from the puzzle page and provides the user with step by step tips to help them 
+complete the puzzle. Clicking on the x in the top 
+right corner causes the modal to disappear again.
+
+#### Win page
+
+![Win page - top](documentation/features/feature-win-page-1.png)
+![Win page - bottom](documentation/features/feature-win-page-2.png)
+
+The win page (7) includes:
+- The original image used to create the puzzle just completed (4)
+- Further information about the picture subject (6)
+- The 'play again' button takes the user back to the puzzle page where a new puzzle picture will be displayed (27)
+- The 'learn more about our wild Isles' button opens the 'Save our Wild Isles' project in a seperate tab (5)
+- An extra message displays once the user has cycled through all available puzzles. The button 'reset and play again' clears the session storage of puzzles seen and takes the user back to the puzzle page where they will now be shown puzzle picture they have already seen
+![Win page - all puzzles seen](documentation/features/feature-win-page-3.png)
+
+#### Favicon and page titles
+
+![Tabs showing all three page titles and the favicon](documentation/features/feature-favicon-and-page-title.png)
+
+A favicon has been included (9) and each page has a different title.
+
+#### Additional alerts
+
+A number of additional alerts have also been programmed in case of future bugs, these alerts include:
+- "puzzle pictures cannot be found, please contact developer"
+- "scramble setting cannot be found, please contact developer"
+- "tile not recognised, please contact developer"
+- "Sneaky peek picture cannot be found, please contact developer"
+- "puzzle completed not recoginsed, please contact developer"
+
 [Return to contents list](#contents)
 
 ### Future Features
