@@ -378,6 +378,20 @@ In the end I resolved the bug by giving the div a fixed width and height, which 
 
 ## Deployment
 
+This website has been deployed using GitHub pages.
+
+Instructions to deploy using GitHub pages: 
+
+1 - While in the GitHub repository, navigate to settings (top right) 
+
+2 - Using the navigation links on the left scroll down and click on pages. 
+
+3 - Check the source is set to the branch: main 
+
+4 - Click save 
+
+5 - The page will now reload and when you navigate back to pages a link for your published site will be present. Please note this can take awhile.
+
 [Return to contents list](#contents)
 
 ## Adding additional puzzle images
