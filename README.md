@@ -531,7 +531,15 @@ if (completedPuzzleNumbers.length === 2)
 
 ## Acknowledgements
 
+My husband - For providing support and lots of user testing throughout the development of this project.
+
+My two young boys - For their support during the many hours spent working on this project and for being user testers for me.
+
+My mentor Gurjot - For listening to my project idea and pointing me in the direction of modals and session storage as a means to overcome two of the hurdles I faced early on. Then at the end for helping me to prioritise what I needed to add/improve and what could be left, as well as helping me to work through my bug with the image on the win page.
+
 Sean from Code Institutes tutor support - For helping me to find the best way to prevent the tileSwap function from activating until the slide animation was complete. For also pointing out a future bug and the need to also prevent the click event listener from calling the tileClicked function until the tile slide and swap had completed.
+
+Code Institue - The majority of the coding skills, knowledge and understanding showcased in this project have been learnt through the 'Diploma of Full stack software development' that I am completing with Code Institute.
 
 ### Websites, articles and tutorials
 
@@ -555,6 +563,8 @@ Sean from Code Institutes tutor support - For helping me to find the best way to
 
 [Window: open() method - mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/open) - I learnt about using javascript to open a new window and how to control where and how it opens from this article.
 
-[Get the last Character of a String in JavaScript - Borislav Hadzhiev](https://bobbyhadz.com/blog/javascript-get-last-character-of-string#:~:text=To%20get%20the%20last%20character,last%20character%20of%20the%20string.) - I learnt how to quickly find the last character in a string from thos blog.
+[Get the last Character of a String in JavaScript - Borislav Hadzhiev](https://bobbyhadz.com/blog/javascript-get-last-character-of-string#:~:text=To%20get%20the%20last%20character,last%20character%20of%20the%20string.) - I learnt how to quickly find the last character in a string from this blog.
+
+[CSS word-spacing Property article by W3 Schools](https://www.w3schools.com/cssref/pr_text_word-spacing.php) - I this article to help me space the words in the h1 a little further apart.
 
 [Return to contents list](#contents)
